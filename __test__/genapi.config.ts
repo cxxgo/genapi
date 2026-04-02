@@ -77,14 +77,15 @@ export default defineConfig(({ version }) => {
         apiNameWithMethod: false
       },
     ],
-    apiBody: ({ url, method, summary, name, parameters, outputInterface, outputType, pstr1, pstr2, pstr3 }) => {
+    apiBody: ({ url, method, summary, name, parameters, outputInterface, outputType, pstr1, pstr2, pstr3 ,requestContentType}) => {
       const quotationMark = pstr3 ? '`' : '\''
       const output = outputType === 'array' ? `${outputInterface}[]` : outputInterface
+      const header = requestContentType === 'multipart/form-data' ? `,{headers:{ 'Content-Type': '${requestContentType}' }}`:''
       return `
         /** ${summary || '无注释'} */
         export function ${name}  (${pstr1}) :Promise<${output}>{
           ${pstr3 || ''}
-          return request.${method}(${quotationMark}${url}${quotationMark}, ${pstr2})
+          return request.${method}(${quotationMark}${url}${quotationMark}, ${pstr2}${header})
         }`
     },
     // 是否生成 mock 数据

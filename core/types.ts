@@ -81,6 +81,8 @@ export interface IApibodyParam {
   pstr2: string
   /** 由 parameters 处理得到，当路径中存在参数时，会有值，值如 'const { id } = data' */
   pstr3: string
+  /** 请求头 Content-Type 如： "application/json" ，"multipart/form-data" ，"application/x-www-form-urlencoded" 等 */
+  requestContentType: string
 }
 
 export interface IMock {
@@ -128,6 +130,8 @@ export interface IApiModel {
   fileName: string
   /** 文件后缀（ts 或 js, 不包含点号） */
   fileExt: 'ts' | 'js'
+  /** 请求头 Content-Type 如： "application/json" ，"multipart/form-data" ，"application/x-www-form-urlencoded" 等 */
+  requestContentType: string
 }
 
 export interface IInterface {

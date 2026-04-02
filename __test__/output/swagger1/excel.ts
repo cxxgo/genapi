@@ -17,7 +17,7 @@ export function excelHistoryGet(): Promise<ApiResponseListImportDesktopResp> {
 
 /** 导入小麦 */
 export function excelImportPost(data?: any): Promise<ApiResponseImportDesktopResp> {
-  return request.post('/api/excel/import', data)
+  return request.post('/api/excel/import', data, { headers: { 'Content-Type': 'multipart/form-data' } })
 }
 
 /** 下载模版 */

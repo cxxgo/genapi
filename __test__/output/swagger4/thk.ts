@@ -329,7 +329,9 @@ export function thkApiV1ConfigCredentialstandardUnitGet(): Promise<ApiResponseSe
 
 /** 批量导入 */
 export function thkApiV1ConfigCredentialstandardUploadPost(data: any): Promise<ApiResponseboolean> {
-  return request.post('/thk/api/v1/config/credential-standard/upload', data)
+  return request.post('/thk/api/v1/config/credential-standard/upload', data, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  })
 }
 
 /** 柠檬清明草质过期提醒维生素 */
