@@ -1,3 +1,9 @@
+## <small>3.0.3 (2026-04-02)</small>
+
+* feat: apiBody 参数选项新增 requestContentType ([bb16e0e](https://github.com/cxxgo/genApi/commit/bb16e0e))
+
+
+
 ## <small>3.0.2 (2025-10-16)</small>
 
 * chore: 添加发布脚本 & changelog ([c53c5d1](https://github.com/cxxgo/genApi/commit/c53c5d1))
