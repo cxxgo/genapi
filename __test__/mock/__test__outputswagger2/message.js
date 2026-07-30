@@ -3,21 +3,21 @@ import {
   ApiResponseAtListAndAckSequenceResp,
   ApiResponseComPageXiaoXiDuiXiang,
   ApiResponseListXiaoXiDuiXiang,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseXiaoXiDuiXiang,
 } from './_interfaces'
 
 /** 确认收到消息 */
-export const messageAckPost = () => Mock.mock(ApiResponseobject())
+export const messageAckPost = () => Mock.mock(ApiResponseObject())
 
 /** 消息定位参数获取 */
 export const messageAtListAndAckSequenceGet = () => Mock.mock(ApiResponseAtListAndAckSequenceResp())
 
 /** 清除历史消息 */
-export const messageClearPost = () => Mock.mock(ApiResponseobject())
+export const messageClearPost = () => Mock.mock(ApiResponseObject())
 
 /** 消息扫雪 */
-export const messageDeletePost = () => Mock.mock(ApiResponseobject())
+export const messageDeletePost = () => Mock.mock(ApiResponseObject())
 
 /** 消息详情 */
 export const messageDetailPost = () => Mock.mock(ApiResponseXiaoXiDuiXiang())

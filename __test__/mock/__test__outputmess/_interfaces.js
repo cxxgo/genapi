@@ -19,7 +19,7 @@ export function ApiResponseListJobCategoryConfigResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListListlong() {
+export function ApiResponseListListLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -29,7 +29,7 @@ export function ApiResponseListListlong() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListTreelong() {
+export function ApiResponseListTreeLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -39,7 +39,7 @@ export function ApiResponseListTreelong() {
     traceId: '@guid',
   }
 }
-export function ApiResponseobject() {
+export function ApiResponseObject() {
   return {
     code: 200,
     data: '',

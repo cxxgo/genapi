@@ -105,7 +105,7 @@ export function ApiResponseBiXieDao() {
     traceId: '@guid',
   }
 }
-export function ApiResponseboolean() {
+export function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -575,7 +575,7 @@ export function ApiResponseListImportDesktopResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListlong() {
+export function ApiResponseListLong() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -655,7 +655,7 @@ export function ApiResponseListShengChengYaoQing() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListstring() {
+export function ApiResponseListString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -685,7 +685,7 @@ export function ApiResponseListSysDictDuiXiangnullZhiBuXuLieHua() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListTreelong() {
+export function ApiResponseListTreeLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -735,7 +735,7 @@ export function ApiResponseListZhiXieChangFangDongXinXi() {
     traceId: '@guid',
   }
 }
-export function ApiResponselong() {
+export function ApiResponseLong() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -745,7 +745,7 @@ export function ApiResponselong() {
     traceId: '@guid',
   }
 }
-export function ApiResponseMapstringobject() {
+export function ApiResponseMapStringobject() {
   return {
     code: 200,
     data: '',
@@ -755,7 +755,7 @@ export function ApiResponseMapstringobject() {
     traceId: '@guid',
   }
 }
-export function ApiResponseMapstringstring() {
+export function ApiResponseMapStringstring() {
   return {
     code: 200,
     data: '',
@@ -955,7 +955,7 @@ export function ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo() {
     traceId: '@guid',
   }
 }
-export function ApiResponsestring() {
+export function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',

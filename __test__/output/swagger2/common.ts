@@ -4,7 +4,7 @@ import type {
   ApiResponseComPageSearchBeforeAddFriendResp,
   ApiResponseKeyBorardBindResp,
   ApiResponseListSwitchKeyBorardListResp,
-  ApiResponseMapstringSearchMapResp,
+  ApiResponseMapStringSearchMapResp,
   CommonSearchReq,
   KeyBorardBindReq,
   SearchBeforeAddFriendReq,
@@ -25,7 +25,7 @@ export function commonSearchBeforeAddFriendPost(
 }
 
 /** 聚合搜索 */
-export function commonSearchPost(data: SearchReq): Promise<ApiResponseMapstringSearchMapResp> {
+export function commonSearchPost(data: SearchReq): Promise<ApiResponseMapStringSearchMapResp> {
   return request.post('/api/common/search', data)
 }
 

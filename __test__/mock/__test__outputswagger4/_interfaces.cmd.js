@@ -14,7 +14,7 @@ function ApiResponse() {
     traceId: '@guid',
   }
 }
-function ApiResponseappChaXianBanShuiGuoDaoFanHui() {
+function ApiResponseAppChaXianBanShuiGuoDaoFanHui() {
   return {
     code: 200,
     data: appChaXianBanShuiGuoDaoFanHui(),
@@ -24,7 +24,7 @@ function ApiResponseappChaXianBanShuiGuoDaoFanHui() {
     traceId: '@guid',
   }
 }
-function ApiResponseboolean() {
+function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -234,10 +234,10 @@ function ApiResponseComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing()
     traceId: '@guid',
   }
 }
-function ApiResponseComPagestring() {
+function ApiResponseComPageString() {
   return {
     code: 200,
-    data: ComPagestring(),
+    data: ComPageString(),
     msg: '@string(5,50)',
     success: '@boolean',
     timestamp: '@datetime',
@@ -574,7 +574,7 @@ function ApiResponseListMap() {
     traceId: '@guid',
   }
 }
-function ApiResponseListobject() {
+function ApiResponseListObject() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -584,7 +584,7 @@ function ApiResponseListobject() {
     traceId: '@guid',
   }
 }
-function ApiResponseListstring() {
+function ApiResponseListString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -644,7 +644,7 @@ function ApiResponseMap() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringobject() {
+function ApiResponseMapStringobject() {
   return {
     code: 200,
     data: '',
@@ -654,7 +654,7 @@ function ApiResponseMapstringobject() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringstring() {
+function ApiResponseMapStringstring() {
   return {
     code: 200,
     data: '',
@@ -694,7 +694,7 @@ function ApiResponseQingMingCaoZhiXiaoChouYu() {
     traceId: '@guid',
   }
 }
-function ApiResponseSetstring() {
+function ApiResponseSetString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -724,7 +724,7 @@ function ApiResponseShengJiTiaoJianJuanXinCaiXiangQing() {
     traceId: '@guid',
   }
 }
-function ApiResponsestring() {
+function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -1258,7 +1258,7 @@ function ComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing() {
     },
   }
 }
-function ComPagestring() {
+function ComPageString() {
   return {
     current: '@integer(3,1000)',
     'records|1-20': ['@string(5,50)'],
@@ -2979,8 +2979,8 @@ function ZhanShiZanShiYongDeShengJiTiaoJianFanHui() {
 module.exports = {
   AddTastyCredentialProjectReq,
   ApiResponse,
-  ApiResponseappChaXianBanShuiGuoDaoFanHui,
-  ApiResponseboolean,
+  ApiResponseAppChaXianBanShuiGuoDaoFanHui,
+  ApiResponseBoolean,
   ApiResponseChaXianBanGongShangShuiGuoDaoFanHui,
   ApiResponseChaXianBanQingMingCaoZhiShengJiTiaoJianFanHui,
   ApiResponseComPageChaXianBanBuLiangGuShiLieBiaoXiangYing,
@@ -3001,7 +3001,7 @@ module.exports = {
   ApiResponseComPageJuanXinCaiGongZuoYeJi,
   ApiResponseComPageQingMingCaoZhiXiaoChouYu,
   ApiResponseComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing,
-  ApiResponseComPagestring,
+  ApiResponseComPageString,
   ApiResponseComPageTastyCredExamResultResp,
   ApiResponseComPageYeJiRenLingRiZhi,
   ApiResponseEntCredOverviewResp,
@@ -3035,22 +3035,22 @@ module.exports = {
   ApiResponseListJuanXinCaiGongZuoJingLi,
   ApiResponseListJuanXinCaiGongZuoYeJi,
   ApiResponseListMap,
-  ApiResponseListobject,
-  ApiResponseListstring,
+  ApiResponseListObject,
+  ApiResponseListString,
   ApiResponseListTastyCredEvalInfo,
   ApiResponseListTastyCredUpRecommendResp,
   ApiResponseListVOResp,
   ApiResponseListYinXingKaShuiGuoDao,
   ApiResponseMap,
-  ApiResponseMapstringobject,
-  ApiResponseMapstringstring,
+  ApiResponseMapStringobject,
+  ApiResponseMapStringstring,
   ApiResponsePlanCreditResp,
   ApiResponsePlanTastyResp,
   ApiResponseQingMingCaoZhiXiaoChouYu,
-  ApiResponseSetstring,
+  ApiResponseSetString,
   ApiResponseSheBaoZhangHao,
   ApiResponseShengJiTiaoJianJuanXinCaiXiangQing,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseTastyAllCountResp,
   ApiResponseTastyCredEvalInfo,
   ApiResponseTastyCredUpRecommendResp,
@@ -3097,7 +3097,7 @@ module.exports = {
   ComPageJuanXinCaiGongZuoYeJi,
   ComPageQingMingCaoZhiXiaoChouYu,
   ComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing,
-  ComPagestring,
+  ComPageString,
   ComPageTastyCredExamResultResp,
   ComPageYeJiRenLingRiZhi,
   CredentialFilter,

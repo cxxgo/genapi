@@ -2,13 +2,13 @@ const request: any = () => {}
 import type {
   ApiResponse,
   ApiResponseListBirdF2fKeyBorardListResp,
-  ApiResponselong,
+  ApiResponseLong,
   EnterBirdReq,
   SaveRandomReq,
 } from './_interfaces.ts'
 
 /** 进入部落瓜子 */
-export function birdf2fEnterBirdPost(data: EnterBirdReq): Promise<ApiResponselong> {
+export function birdf2fEnterBirdPost(data: EnterBirdReq): Promise<ApiResponseLong> {
   return request.post('/api/birdf2f/enterBird', data)
 }
 

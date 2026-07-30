@@ -24,7 +24,7 @@ function ApiResponseAddBirdResp() {
     traceId: '@guid',
   }
 }
-function ApiResponseboolean() {
+function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -354,7 +354,7 @@ function ApiResponseListWhiteNoteResp() {
     traceId: '@guid',
   }
 }
-function ApiResponselong() {
+function ApiResponseLong() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -364,7 +364,7 @@ function ApiResponselong() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringSearchMapResp() {
+function ApiResponseMapStringSearchMapResp() {
   return {
     code: 200,
     data: SearchMapResp(),
@@ -384,7 +384,7 @@ function ApiResponseMemberBirdStatusResp() {
     traceId: '@guid',
   }
 }
-function ApiResponseobject() {
+function ApiResponseObject() {
   return {
     code: 200,
     data: '',
@@ -414,7 +414,7 @@ function ApiResponseQueryLastMessageResp() {
     traceId: '@guid',
   }
 }
-function ApiResponsestring() {
+function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -1740,7 +1740,7 @@ module.exports = {
   AddBirdResp,
   ApiResponse,
   ApiResponseAddBirdResp,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseBuLuoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseBuLuoDuiXiangBirdDetailResp,
   ApiResponseBuLuoDuiXiangBirdResp,
@@ -1773,13 +1773,13 @@ module.exports = {
   ApiResponseListSwitchKeyBorardListResp,
   ApiResponseListUnreadResp,
   ApiResponseListWhiteNoteResp,
-  ApiResponselong,
-  ApiResponseMapstringSearchMapResp,
+  ApiResponseLong,
+  ApiResponseMapStringSearchMapResp,
   ApiResponseMemberBirdStatusResp,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponsePutFileResp,
   ApiResponseQueryLastMessageResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseXiaoDaoXiaoXi,
   ApiResponseXiaoXiDuiXiang,
   ApiResponseYanChangChunHuaXiaoXiXiangQingRequestDetailResp,

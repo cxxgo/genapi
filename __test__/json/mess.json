@@ -108,7 +108,7 @@
         "security": [{ "satoken": ["global"] }]
       }
     },
-    "/emo-center/api/admin/jobCategory/byParentIds": {
+    "/Emo-Center/api/admin/job-Category//byParentIds": {
       "get": {
         "tags": ["能力标签配置"],
         "summary": "这个接口出参树形结构，同样的children 结构导致 mock 函数死循环了",

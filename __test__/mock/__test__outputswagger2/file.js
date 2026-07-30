@@ -1,6 +1,6 @@
 import Mock from 'better-mock'
 import {
-  ApiResponsealiyunSTSJianQuanFanHuiZhi,
+  ApiResponseAliyunSTSJianQuanFanHuiZhi,
   ApiResponsePutFileResp,
   ApiResponseQianMingWenJianXiangYing,
   ApiResponseShangChuanALiYunQianMingXiangYing,
@@ -9,7 +9,7 @@ import {
 } from './_interfaces'
 
 /** 阿里云STS鉴权 */
-export const fileGetAliyunStsSignGet = () => Mock.mock(ApiResponsealiyunSTSJianQuanFanHuiZhi())
+export const fileGetAliyunStsSignGet = () => Mock.mock(ApiResponseAliyunSTSJianQuanFanHuiZhi())
 
 /** 获取bucket */
 export const fileGetOssConfigPost = () => Mock.mock(ApiResponseShangChuanALiYunQianMingXiangYing())

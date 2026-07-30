@@ -1,23 +1,23 @@
 import Mock from 'better-mock'
 import {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageZhiXieChangChuXing,
   ApiResponseListZhiXieChangChuXing,
   ApiResponseQueryAccInfoResp,
-  ApiResponsestring,
+  ApiResponseString,
 } from './_interfaces'
 
 /** 账号信息 */
 export const blueAccQueryAccPost = () => Mock.mock(ApiResponseQueryAccInfoResp())
 
 /** 加入帽子 */
-export const blueDoorAddDoorPost = () => Mock.mock(ApiResponsestring())
+export const blueDoorAddDoorPost = () => Mock.mock(ApiResponseString())
 
 /** 创建制鞋厂 */
-export const blueDoorCreateDoorPost = () => Mock.mock(ApiResponseboolean())
+export const blueDoorCreateDoorPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 喇叭花是否加入/拥有制鞋厂 */
-export const blueDoorListKeyBorardDoorGet = () => Mock.mock(ApiResponseboolean())
+export const blueDoorListKeyBorardDoorGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 出行喇叭花制鞋厂甬道 */
 export const blueDoorListKeyBorardDoorPost = () => Mock.mock(ApiResponseListZhiXieChangChuXing())

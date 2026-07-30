@@ -1,8 +1,8 @@
 const request: any = () => {}
-import type { AddVerificationImageReq, ApiResponseboolean, ApiResponseMapstringobject } from './_interfaces.ts'
+import type { AddVerificationImageReq, ApiResponseBoolean, ApiResponseMapStringobject } from './_interfaces.ts'
 
 /** 添加验山麻杆图片 */
-export function sliderAddImagePost(data: AddVerificationImageReq): Promise<ApiResponseboolean> {
+export function sliderAddImagePost(data: AddVerificationImageReq): Promise<ApiResponseBoolean> {
   return request.post('/api/slider/addImage', data)
 }
 
@@ -23,7 +23,7 @@ export function sliderCreateVerificationEnumGet(data: {
     | 'SUPER_ACCEPT'
     | 'SUPER_TRANSFER'
     | 'UPDATE_PASSWORD'
-}): Promise<ApiResponseMapstringobject> {
+}): Promise<ApiResponseMapStringobject> {
   const { uuid, verificationEnum } = data
   return request.get(`/api/slider/create/${verificationEnum}`, { uuid })
 }
@@ -47,7 +47,7 @@ export function sliderPreCheckVerificationEnumGet(data: {
     | 'UPDATE_PASSWORD'
   // 滑块x坐标
   xPos?: number
-}): Promise<ApiResponseboolean> {
+}): Promise<ApiResponseBoolean> {
   const { uuid, verificationEnum, xPos } = data
   return request.get(`/api/slider/preCheck/${verificationEnum}`, { uuid, xPos })
 }

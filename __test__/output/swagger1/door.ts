@@ -1,13 +1,13 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageDesktopResp,
   ApiResponseComPageDoorIdentificationResp,
   ApiResponseJudgeSwitchDoorLimitResp,
   ApiResponsePageZhiXieChangBoJuZiXinXi,
   ApiResponseQueryDoorPageHomeResp,
   ApiResponseQueryJudgeClaimResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
   ApiResponseWhiteLinkDoorResp,
   ApiResponseZhiXieChangBoJuZiXinXi,
@@ -52,12 +52,12 @@ export function doorIdentificationcenterAddDoorGet(): Promise<ApiResponseJudgeSw
 }
 
 /** 加湿帽子 */
-export function doorIdentificationcenterAddDoorPost(data: ChuangJianZhiXieChang): Promise<ApiResponsestring> {
+export function doorIdentificationcenterAddDoorPost(data: ChuangJianZhiXieChang): Promise<ApiResponseString> {
   return request.post('/api/door/identificationcenter/addDoor', data)
 }
 
 /** 扫落叶主制鞋厂 */
-export function doorIdentificationcenterDelDoorGet(data: { id?: string }): Promise<ApiResponsestring> {
+export function doorIdentificationcenterDelDoorGet(data: { id?: string }): Promise<ApiResponseString> {
   return request.get('/api/door/identificationcenter/delDoor', data)
 }
 
@@ -77,7 +77,7 @@ export function doorIdentificationcenterListDoorPost(
 }
 
 /** 切换主制鞋厂 */
-export function doorIdentificationcenterSwitchMainDoorGet(data: { id?: string }): Promise<ApiResponsestring> {
+export function doorIdentificationcenterSwitchMainDoorGet(data: { id?: string }): Promise<ApiResponseString> {
   return request.get('/api/door/identificationcenter/switchMainDoor', data)
 }
 
@@ -169,13 +169,13 @@ export function doorLinkWhitePost(data: WhiteLinkDoorReq): Promise<ApiResponseVo
 }
 
 /** 认领制鞋厂信息 */
-export function doorPageHomeClaimCompanyIdGet(data: { companyId?: string }): Promise<ApiResponseboolean> {
+export function doorPageHomeClaimCompanyIdGet(data: { companyId?: string }): Promise<ApiResponseBoolean> {
   const { companyId } = data
   return request.get(`/api/door/pageHome/claim/${companyId}`)
 }
 
 /** 排除制鞋厂信息 */
-export function doorPageHomeExcludeClaimIdGet(data: { claimId?: string }): Promise<ApiResponseboolean> {
+export function doorPageHomeExcludeClaimIdGet(data: { claimId?: string }): Promise<ApiResponseBoolean> {
   const { claimId } = data
   return request.get(`/api/door/pageHome/exclude/${claimId}`)
 }

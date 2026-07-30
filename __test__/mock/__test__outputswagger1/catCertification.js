@@ -7,7 +7,7 @@ import {
   ApiResponseOcrIdCardBackResp,
   ApiResponseOcrIdCardFrontResp,
   ApiResponseQueryCertFormResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVerificationResp,
   ApiResponseVoid,
 } from './_interfaces'
@@ -37,7 +37,7 @@ export const catCertificationInitFaceVerifyWithCertifyIdTypePost = () => Mock.mo
 export const catCertificationQueryCertInfoGet = () => Mock.mock(ApiResponseQueryCertFormResp())
 
 /** 出行豆浆机普通放行唯一id */
-export const catCertificationQueryCommonCertifyIdGet = () => Mock.mock(ApiResponsestring())
+export const catCertificationQueryCommonCertifyIdGet = () => Mock.mock(ApiResponseString())
 
 /** 菜花钱包-放行去哪儿信息 */
 export const catCertificationWalletInfoPost = () => Mock.mock(ApiResponseVoid())

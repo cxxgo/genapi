@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageXiaoYuanZhuoGuanLi,
   ApiResponseJSONArray,
   PageInvoiceReq,
@@ -8,7 +8,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 添加开票 */
-export function invoiceAddPost(data: XiaoYuanZhuoGuanLi): Promise<ApiResponseboolean> {
+export function invoiceAddPost(data: XiaoYuanZhuoGuanLi): Promise<ApiResponseBoolean> {
   return request.post('/api/invoice/add', data)
 }
 
@@ -18,7 +18,7 @@ export function invoiceCompanyTaxListGet(data: { companyName?: string }): Promis
 }
 
 /** 扫落叶开票 */
-export function invoiceDelGet(data: { id?: string }): Promise<ApiResponseboolean> {
+export function invoiceDelGet(data: { id?: string }): Promise<ApiResponseBoolean> {
   return request.get('/api/invoice/del', data)
 }
 
@@ -28,6 +28,6 @@ export function invoicePagePost(data: PageInvoiceReq): Promise<ApiResponseComPag
 }
 
 /** 更新开票 */
-export function invoiceUpdatePost(data: XiaoYuanZhuoGuanLi): Promise<ApiResponseboolean> {
+export function invoiceUpdatePost(data: XiaoYuanZhuoGuanLi): Promise<ApiResponseBoolean> {
   return request.post('/api/invoice/update', data)
 }

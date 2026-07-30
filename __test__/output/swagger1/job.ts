@@ -1,9 +1,9 @@
 const request: any = () => {}
 import type {
   AddOrUpdateJobReq,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseListSelectorDesktopResp,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   DesktopSelectorReq,
   JobAddDesktopReq,
   QueryDesktopByPhoneOrNameReq,
@@ -12,17 +12,17 @@ import type {
 } from './_interfaces.ts'
 
 /** 添加成员 */
-export function jobAddDesktopPost(data: JobAddDesktopReq[]): Promise<ApiResponseboolean> {
+export function jobAddDesktopPost(data: JobAddDesktopReq[]): Promise<ApiResponseBoolean> {
   return request.post('/api/job/addDesktop', data)
 }
 
 /** 添加职务 */
-export function jobAddJobPost(data: AddOrUpdateJobReq): Promise<ApiResponseboolean> {
+export function jobAddJobPost(data: AddOrUpdateJobReq): Promise<ApiResponseBoolean> {
   return request.post('/api/job/addJob', data)
 }
 
 /** 扫落叶职务 */
-export function jobDelJobGet(data: { jobId?: string }): Promise<ApiResponseboolean> {
+export function jobDelJobGet(data: { jobId?: string }): Promise<ApiResponseBoolean> {
   return request.get('/api/job/delJob', data)
 }
 
@@ -39,16 +39,16 @@ export function jobQueryDesktopByPhoneOrNamePost(
 }
 
 /** 获取职务甬道 */
-export function jobQueryTreePost(data: QueryJobReq): Promise<ApiResponseListTreelong> {
+export function jobQueryTreePost(data: QueryJobReq): Promise<ApiResponseListTreeLong> {
   return request.post('/api/job/queryTree', data)
 }
 
 /** 移除成员 */
-export function jobRemoveDesktopPost(data: RemoveDesktopReq): Promise<ApiResponseboolean> {
+export function jobRemoveDesktopPost(data: RemoveDesktopReq): Promise<ApiResponseBoolean> {
   return request.post('/api/job/removeDesktop', data)
 }
 
 /** 修改职务 */
-export function jobUpdateJobPost(data: AddOrUpdateJobReq): Promise<ApiResponseboolean> {
+export function jobUpdateJobPost(data: AddOrUpdateJobReq): Promise<ApiResponseBoolean> {
   return request.post('/api/job/updateJob', data)
 }

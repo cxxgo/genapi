@@ -7,7 +7,7 @@ import type {
   ApiResponseOcrIdCardBackResp,
   ApiResponseOcrIdCardFrontResp,
   ApiResponseQueryCertFormResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVerificationResp,
   ApiResponseVoid,
   CatVerifyReq,
@@ -67,7 +67,7 @@ export function catCertificationQueryCertInfoGet(data: { certifyId?: string }): 
 }
 
 /** 出行豆浆机普通放行唯一id */
-export function catCertificationQueryCommonCertifyIdGet(): Promise<ApiResponsestring> {
+export function catCertificationQueryCommonCertifyIdGet(): Promise<ApiResponseString> {
   return request.get('/api/catCertification/queryCommonCertifyId')
 }
 

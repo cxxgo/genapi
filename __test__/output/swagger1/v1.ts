@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageGuanLianShenHeXinXi,
   ApiResponseShenHeTongJiHuanCunSanShiMiao,
   AuditRelationTotalReq,
@@ -24,7 +24,7 @@ export function v1AuditRelationPut(data: {
   req?: BiXieDao
   // 审核类型-auditType
   typeEnum?: 'EMPOWER' | 'RELATION' | 'SIGN'
-}): Promise<ApiResponseboolean> {
+}): Promise<ApiResponseBoolean> {
   return request.put('/api/v1/audit/relation', data)
 }
 

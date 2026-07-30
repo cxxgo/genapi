@@ -1,28 +1,28 @@
 import Mock from 'better-mock'
 import {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageInviteDesktopResp,
   ApiResponseInviteJoinEchoResp,
   ApiResponseInviteLoginResp,
   ApiResponseInviteSetResp,
   ApiResponseJianChaYaoQingMa,
   ApiResponseListShengChengYaoQing,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseYaoQingZhuCe,
   FileSystemResource,
 } from './_interfaces'
 
 /** 取消屏蔽喇叭花 */
-export const inviteAuditCancelShieldIdGet = () => Mock.mock(ApiResponsestring())
+export const inviteAuditCancelShieldIdGet = () => Mock.mock(ApiResponseString())
 
 /** 审核通过 */
-export const inviteAuditPassPost = () => Mock.mock(ApiResponsestring())
+export const inviteAuditPassPost = () => Mock.mock(ApiResponseString())
 
 /** 拒绝加入 */
-export const inviteAuditRefusePost = () => Mock.mock(ApiResponsestring())
+export const inviteAuditRefusePost = () => Mock.mock(ApiResponseString())
 
 /** 屏蔽喇叭花 */
-export const inviteAuditShieldIdGet = () => Mock.mock(ApiResponsestring())
+export const inviteAuditShieldIdGet = () => Mock.mock(ApiResponseString())
 
 /** 检查邀请码 */
 export const inviteCheckInviteCodeGet = () => Mock.mock(ApiResponseJianChaYaoQingMa())
@@ -49,4 +49,4 @@ export const invitePageApplyTypePost = () => Mock.mock(ApiResponseComPageInviteD
 export const inviteQuerySettingGet = () => Mock.mock(ApiResponseInviteSetResp())
 
 /** 邀请设置修改 */
-export const inviteUpdatesettingPost = () => Mock.mock(ApiResponseboolean())
+export const inviteUpdatesettingPost = () => Mock.mock(ApiResponseBoolean())

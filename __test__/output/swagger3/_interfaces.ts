@@ -20,7 +20,7 @@ export interface ApiResponseAddBirdResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseboolean {
+export interface ApiResponseBoolean {
   code?: number
   data?: boolean
   msg?: string
@@ -284,7 +284,7 @@ export interface ApiResponseListWhiteNoteResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponselong {
+export interface ApiResponseLong {
   code?: number
   data?: string
   msg?: string
@@ -292,7 +292,7 @@ export interface ApiResponselong {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseMapstringSearchMapResp {
+export interface ApiResponseMapStringSearchMapResp {
   code?: number
   data?: SearchMapResp
   msg?: string
@@ -308,7 +308,7 @@ export interface ApiResponseMemberBirdStatusResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseobject {
+export interface ApiResponseObject {
   code?: number
   data?: any
   msg?: string
@@ -332,7 +332,7 @@ export interface ApiResponseQueryLastMessageResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponsestring {
+export interface ApiResponseString {
   code?: number
   data?: string
   msg?: string

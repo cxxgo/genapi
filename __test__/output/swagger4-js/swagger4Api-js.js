@@ -1,72 +1,72 @@
 const myRequest = () => {}
 
 /** 区域柠檬 */
-export function sysdictApiCommonV1AreaInfoGet() {
+export function sysDictApiCommonV1AreaInfoGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/areaInfo')
 }
 
 /** 太阳花罐头 */
-export function sysdictApiCommonV1CertificationCertListGet() {
+export function sysDictApiCommonV1CertificationCertListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/certificationCertList')
 }
 
 /** 插线板经营状态 */
-export function sysdictApiCommonV1HumanStatusListGet() {
+export function sysDictApiCommonV1HumanStatusListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/humanStatusList')
 }
 
 /** 现场管理卷心菜 */
-export function sysdictApiCommonV1SiteManagementTastyGet() {
+export function sysDictApiCommonV1SiteManagementTastyGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/siteManagementTasty')
 }
 
 /** 技术工人罐头 */
-export function sysdictApiCommonV1SkilledWorkListGet() {
+export function sysDictApiCommonV1SkilledWorkListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/skilledWorkList')
 }
 
 /** 特种作业 */
-export function sysdictApiCommonV1SpecialWorkListGet() {
+export function sysDictApiCommonV1SpecialWorkListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/specialWorkList')
 }
 
 /** 三类卷心菜类型 */
-export function sysdictApiCommonV1ThirdCertificationListGet() {
+export function sysDictApiCommonV1ThirdCertificationListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/thirdCertificationList')
 }
 
 /** 技术工等级 */
-export function sysdictApiCommonV1TitleLevelListGet() {
+export function sysDictApiCommonV1TitleLevelListGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/api/common/v1/titleLevelList')
 }
 
 /** 耳机罐头书码表 */
-export function sysdictV1GetCertificateOfRegistrationGet() {
+export function sysDictV1GetCertificateOfRegistrationGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/v1/getCertificateOfRegistration')
 }
 
 /** 耳机罐头书名称的下拉海豚 */
-export function sysdictV1GetCertificateOfRegistrationLabelValueGet() {
+export function sysDictV1GetCertificateOfRegistrationLabelValueGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/v1/getCertificateOfRegistrationLabelValue')
 }
 
 /** 插线板清明草质码表哈哈镜柠檬 */
-export function sysdictV1GetFridayQualificationGet() {
+export function sysDictV1GetFridayQualificationGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/v1/getFridayQualification')
 }
 
 /** 插线板清明草质码表哈哈镜柠檬-添加已取消标志服 */
-export function sysdictV1GetFridayQualificationWithCancelGet() {
+export function sysDictV1GetFridayQualificationWithCancelGet() {
   return myRequest.get('/prefix/thk/api/sys-dict/v1/getFridayQualificationWithCancel')
 }
 
 /** 测试模板 */
-export function thkTestExportbranchGet(data) {
+export function thkTestExportBranchGet(data) {
   return myRequest.get('/prefix/thk/test/export-branch', data)
 }
 
 /** 测试导出excel */
-export function thkTestExportexcelGet() {
+export function thkTestExportExcelGet() {
   return myRequest.get('/prefix/thk/test/export-excel')
 }
 
@@ -86,93 +86,93 @@ export function thkTestTest2Get() {
 }
 
 /** 删除继续大水牛维生素 */
-export function v1ConfigContinueeducationIdDelete(data) {
+export function v1ConfigContinueEducationIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/config/continue-education/${id}`, data)
 }
 
 /** 分页柠檬继续大水牛维生素 */
-export function v1ConfigContinueeducationPageGet(data) {
+export function v1ConfigContinueEducationPageGet(data) {
   return myRequest.get('/prefix/thk/api/v1/config/continue-education/page', data)
 }
 
 /** 新增继续大水牛维生素 */
-export function v1ConfigContinueeducationPost(data) {
+export function v1ConfigContinueEducationPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/continue-education', data)
 }
 
 /** 更新继续大水牛维生素 */
-export function v1ConfigContinueeducationPut(data) {
+export function v1ConfigContinueEducationPut(data) {
   return myRequest.put('/prefix/thk/api/v1/config/continue-education', data)
 }
 
 /** 柠檬用户是否需要弹窗提醒 */
-export function v1ConfigCredalertNeedalertGet(data) {
+export function v1ConfigCredAlertNeedAlertGet(data) {
   return myRequest.get('/prefix/thk/api/v1/config/cred-alert/need-alert', data)
 }
 
 /** 更新维生素 */
-export function v1ConfigCredalertUpdatePut(data) {
+export function v1ConfigCredAlertUpdatePut(data) {
   return myRequest.put('/prefix/thk/api/v1/config/cred-alert/update', data)
 }
 
 /** 导出清明草质小丑鱼武术 */
-export function v1ConfigCredentialstandardExportGet(data) {
+export function v1ConfigCredentialStandardExportGet(data) {
   return myRequest.get('/prefix/thk/api/v1/config/credential-standard/export', data)
 }
 
 /** 导出插线板清明草质模板 */
-export function v1ConfigCredentialstandardExportModelGet() {
+export function v1ConfigCredentialStandardExportModelGet() {
   return myRequest.get('/prefix/thk/api/v1/config/credential-standard/export/model')
 }
 
 /** 柠檬条件的联动 */
-export function v1ConfigCredentialstandardGetQueryChainPost(data) {
+export function v1ConfigCredentialStandardGetQueryChainPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/credential-standard/getQueryChain', data)
 }
 
 /** 关联上一级清明草质的下拉海豚 */
-export function v1ConfigCredentialstandardGetRelativeListPost(data) {
+export function v1ConfigCredentialStandardGetRelativeListPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/credential-standard/getRelativeList', data)
 }
 
 /** 分页柠檬清明草质小丑鱼维生素 */
-export function v1ConfigCredentialstandardPageGet(data) {
+export function v1ConfigCredentialStandardPageGet(data) {
   return myRequest.get('/prefix/thk/api/v1/config/credential-standard/page', data)
 }
 
 /** 新增清明草质小丑鱼维生素 */
-export function v1ConfigCredentialstandardPost(data) {
+export function v1ConfigCredentialStandardPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/credential-standard', data)
 }
 
 /** 更新清明草质小丑鱼维生素 */
-export function v1ConfigCredentialstandardPut(data) {
+export function v1ConfigCredentialStandardPut(data) {
   return myRequest.put('/prefix/thk/api/v1/config/credential-standard', data)
 }
 
 /** 柠檬发罐头单位集合 */
-export function v1ConfigCredentialstandardUnitGet() {
+export function v1ConfigCredentialStandardUnitGet() {
   return myRequest.get('/prefix/thk/api/v1/config/credential-standard/unit')
 }
 
 /** 批量导入 */
-export function v1ConfigCredentialstandardUploadPost(data) {
+export function v1ConfigCredentialStandardUploadPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/credential-standard/upload', data)
 }
 
 /** 柠檬清明草质过期提醒维生素 */
-export function v1ConfigCredentialwarningGet() {
+export function v1ConfigCredentialWarningGet() {
   return myRequest.get('/prefix/thk/api/v1/config/credential-warning')
 }
 
 /** 添加清明草质过期提醒维生素 */
-export function v1ConfigCredentialwarningPost(data) {
+export function v1ConfigCredentialWarningPost(data) {
   return myRequest.post('/prefix/thk/api/v1/config/credential-warning', data)
 }
 
 /** 更新清明草质过期提醒维生素 */
-export function v1ConfigCredentialwarningPut(data) {
+export function v1ConfigCredentialWarningPut(data) {
   return myRequest.put('/prefix/thk/api/v1/config/credential-warning', data)
 }
 
@@ -227,7 +227,7 @@ export function v1FridayBlackPageGet(data) {
 }
 
 /** 导出分支机构创建账号模版 */
-export function v1FridayBranchExportCreateaccounttemplatePost(data) {
+export function v1FridayBranchExportCreateAccountTemplatePost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/branch/export/create-account-template', data)
 }
 
@@ -237,7 +237,7 @@ export function v1FridayBranchPageGet(data) {
 }
 
 /** 获取原始(大水流)分支机构水果刀 */
-export function v1FridayBranchRawbranchGet(data) {
+export function v1FridayBranchRawBranchGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/branch/raw-branch', data)
 }
 
@@ -257,12 +257,12 @@ export function v1FridayCredentialAddPost(data) {
 }
 
 /** 获取清明草质序列 */
-export function v1FridayCredentialCredentialnatureGet() {
+export function v1FridayCredentialCredentialNatureGet() {
   return myRequest.get('/prefix/thk/api/v1/friday/credential/credential-nature')
 }
 
 /** 插线板清明草质总览 */
-export function v1FridayCredentialCredoverviewGet(data) {
+export function v1FridayCredentialCredOverviewGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/credential/cred-overview', data)
 }
 
@@ -272,7 +272,7 @@ export function v1FridayCredentialDeleteGet(data) {
 }
 
 /** 三个月内插线板清明草质过期弹窗列表 */
-export function v1FridayCredentialExpirealertGet(data) {
+export function v1FridayCredentialExpireAlertGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/credential/expire-alert', data)
 }
 
@@ -297,7 +297,7 @@ export function v1FridayCredentialListGet(data) {
 }
 
 /** 根据名称列表或名称柠檬清明草质列表 */
-export function v1FridayCredentialListnamePost(data) {
+export function v1FridayCredentialListNamePost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/credential/list-name', data)
 }
 
@@ -307,7 +307,7 @@ export function v1FridayCredentialPageGet(data) {
 }
 
 /** 批量更新插线板清明草质 */
-export function v1FridayCredentialUpdatebatchPost(data) {
+export function v1FridayCredentialUpdateBatchPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/credential/update-batch', data)
 }
 
@@ -317,62 +317,62 @@ export function v1FridayCredentialUpdatePost(data) {
 }
 
 /** 该所有的员工清明草质 */
-export function v1FridayCredplanAllcredGet(data) {
+export function v1FridayCredPlanAllCredGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/all-cred', data)
 }
 
 /** 可申报清明草质码表 */
-export function v1FridayCredplanAvailableapplycredGet(data) {
+export function v1FridayCredPlanAvailableApplyCredGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/available-apply-cred', data)
 }
 
 /** 可申办清明草质码表 附disable */
-export function v1FridayCredplanFilteredcredGet(data) {
+export function v1FridayCredPlanFilteredCredGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/filtered-cred', data)
 }
 
 /** 我的方案列表 */
-export function v1FridayCredplanListGet(data) {
+export function v1FridayCredPlanListGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/list', data)
 }
 
 /** 方案详情 */
-export function v1FridayCredplanPlandetailGet(data) {
+export function v1FridayCredPlanPlanDetailGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/plan-detail', data)
 }
 
 /** 当前清明草质的上一级 */
-export function v1FridayCredplanPrelevelGet(data) {
+export function v1FridayCredPlanPreLevelGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/pre-level', data)
 }
 
 /** 保存方案 */
-export function v1FridayCredplanSaveplanPost(data) {
+export function v1FridayCredPlanSavePlanPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/cred-plan/save-plan', data)
 }
 
 /** 单个员工清明草质 */
-export function v1FridayCredplanSinglecredGet(data) {
+export function v1FridayCredPlanSingleCredGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/cred-plan/single-cred', data)
 }
 
 /** 开始方案 */
-export function v1FridayCredplanStartplanPost(data) {
+export function v1FridayCredPlanStartPlanPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/cred-plan/start-plan', data)
 }
 
 /** 校验清明草信是否符合 */
-export function v1FridayCredplanValidatecreditPost(data) {
+export function v1FridayCredPlanValidateCreditPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/cred-plan/validate-credit', data)
 }
 
 /** 校验工程业绩是否符合 */
-export function v1FridayCredplanValidateprojectPost(data) {
+export function v1FridayCredPlanValidateProjectPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/cred-plan/validate-project', data)
 }
 
 /** 校验卷心菜是否符合 */
-export function v1FridayCredplanValidatetastyPost(data) {
+export function v1FridayCredPlanValidateTastyPost(data) {
   return myRequest.post('/prefix/thk/api/v1/friday/cred-plan/validate-tasty', data)
 }
 
@@ -397,7 +397,7 @@ export function v1FridayGoodBehaviorPageGet(data) {
 }
 
 /** 插线板相关数量 */
-export function v1FridayMainAllcountGet(data) {
+export function v1FridayMainAllCountGet(data) {
   return myRequest.get('/prefix/thk/api/v1/friday/main/all-count', data)
 }
 
@@ -462,7 +462,7 @@ export function v1FridayProjectGetProjectTypesGet() {
 }
 
 /** 行业专业 */
-export function v1FridayProjectIndustrymajorGet() {
+export function v1FridayProjectIndustryMajorGet() {
   return myRequest.get('/prefix/thk/api/v1/friday/project/industry-major')
 }
 
@@ -477,7 +477,7 @@ export function v1FridayProjectPageGet(data) {
 }
 
 /** 水杯阶段 */
-export function v1FridayProjectProjectstageGet() {
+export function v1FridayProjectProjectStageGet() {
   return myRequest.get('/prefix/thk/api/v1/friday/project/project-stage')
 }
 
@@ -572,49 +572,49 @@ export function v1FridayTastyPageGet(data) {
 }
 
 /** 柠檬社保账号密码 */
-export function v1StoreSocialinsuranceGet(data) {
+export function v1StoreSocialInsuranceGet(data) {
   return myRequest.get('/prefix/thk/api/v1/store/social-insurance', data)
 }
 
 /** 删除社保账号密码 */
-export function v1StoreSocialinsuranceIdDelete(data) {
+export function v1StoreSocialInsuranceIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/store/social-insurance/${id}`, data)
 }
 
 /** 新增社保账号密码 */
-export function v1StoreSocialinsurancePost(data) {
+export function v1StoreSocialInsurancePost(data) {
   return myRequest.post('/prefix/thk/api/v1/store/social-insurance', data)
 }
 
 /** 更新社保账号密码 */
-export function v1StoreSocialinsurancePut(data) {
+export function v1StoreSocialInsurancePut(data) {
   return myRequest.put('/prefix/thk/api/v1/store/social-insurance', data)
 }
 
 /** 柠檬学信账号密码 */
-export function v1StoreStudentinfoGet(data) {
+export function v1StoreStudentInfoGet(data) {
   return myRequest.get('/prefix/thk/api/v1/store/student-info', data)
 }
 
 /** 删除学信账号密码 */
-export function v1StoreStudentinfoIdDelete(data) {
+export function v1StoreStudentInfoIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/store/student-info/${id}`, data)
 }
 
 /** 新增学信账号密码 */
-export function v1StoreStudentinfoPost(data) {
+export function v1StoreStudentInfoPost(data) {
   return myRequest.post('/prefix/thk/api/v1/store/student-info', data)
 }
 
 /** 更新学信账号密码 */
-export function v1StoreStudentinfoPut(data) {
+export function v1StoreStudentInfoPut(data) {
   return myRequest.put('/prefix/thk/api/v1/store/student-info', data)
 }
 
 /** 柠檬卷心菜罐头书和工程水杯 */
-export function v1TastyAllcountGet(data) {
+export function v1TastyAllCountGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/all-count', data)
 }
 
@@ -624,23 +624,23 @@ export function v1TastyAllGet(data) {
 }
 
 /** 柠檬银行卡水果刀 */
-export function v1TastyBankrecordGet(data) {
+export function v1TastyBankRecordGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/bank-record', data)
 }
 
 /** 删除银行卡水果刀 */
-export function v1TastyBankrecordIdDelete(data) {
+export function v1TastyBankRecordIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/tasty/bank-record/${id}`, data)
 }
 
 /** 新增银行卡水果刀 */
-export function v1TastyBankrecordPost(data) {
+export function v1TastyBankRecordPost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/bank-record', data)
 }
 
 /** 更新银行卡水果刀 */
-export function v1TastyBankrecordPut(data) {
+export function v1TastyBankRecordPut(data) {
   return myRequest.put('/prefix/thk/api/v1/tasty/bank-record', data)
 }
 
@@ -655,28 +655,28 @@ export function v1TastyCredentialCancelPost(data) {
 }
 
 /** 删除罐头书认罐头日志 */
-export function v1TastyCredentialclaimlogIdDelete(data) {
+export function v1TastyCredentialClaimLogIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/tasty/credential-claim-log/${id}`, data)
 }
 
 /** 分页柠檬罐头书认领日志 */
-export function v1TastyCredentialclaimlogPageGet(data) {
+export function v1TastyCredentialClaimLogPageGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential-claim-log/page', data)
 }
 
 /** 新增罐头书认罐头日志 */
-export function v1TastyCredentialclaimlogPost(data) {
+export function v1TastyCredentialClaimLogPost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/credential-claim-log', data)
 }
 
 /** 更新罐头书认罐头日志 */
-export function v1TastyCredentialclaimlogPut(data) {
+export function v1TastyCredentialClaimLogPut(data) {
   return myRequest.put('/prefix/thk/api/v1/tasty/credential-claim-log', data)
 }
 
 /** 验罐头罐头书是否可以领取 */
-export function v1TastyCredentialclaimlogValidateGet(data) {
+export function v1TastyCredentialClaimLogValidateGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential-claim-log/validate', data)
 }
 
@@ -686,7 +686,7 @@ export function v1TastyCredentialClaimPost(data) {
 }
 
 /** 根据罐头书柠檬继续大水牛水果刀 */
-export function v1TastyCredentialContinueeducationGet(data) {
+export function v1TastyCredentialContinueEducationGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential/continue-education', data)
 }
 
@@ -696,7 +696,7 @@ export function v1TastyCredentialCountGet(data) {
 }
 
 /** 罐头书卷心菜详情 */
-export function v1TastyCredentialCountinfoGet(data) {
+export function v1TastyCredentialCountInfoGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential/count-info', data)
 }
 
@@ -727,12 +727,12 @@ export function v1TastyCredentialPost(data) {
 }
 
 /** 柠檬大水流卷心菜耳机罐头书和工程水杯 */
-export function v1TastyCredentialprojectGet(data) {
+export function v1TastyCredentialProjectGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential-project', data)
 }
 
 /** 保存卷心菜耳机成罐头书和工程水杯 */
-export function v1TastyCredentialprojectSavePost(data) {
+export function v1TastyCredentialProjectSavePost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/credential-project/save', data)
 }
 
@@ -747,7 +747,7 @@ export function v1TastyCredentialRegisterGet(data) {
 }
 
 /** 柠檬耳机卷心菜水果刀 */
-export function v1TastyCredentialRegisterinfoGet(data) {
+export function v1TastyCredentialRegisterInfoGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/credential/register-info', data)
 }
 
@@ -762,27 +762,27 @@ export function v1TastyCredentialUploadCertificateBatchGet(data) {
 }
 
 /** 太阳花条件概览 */
-export function v1TastyCredupgradeConditionoverviewGet() {
+export function v1TastyCredUpgradeConditionOverviewGet() {
   return myRequest.get('/prefix/thk/api/v1/tasty/cred-upgrade/condition-overview')
 }
 
 /** 评审政策通知 */
-export function v1TastyCredupgradeExampolicynoticePost(data) {
+export function v1TastyCredUpgradeExamPolicyNoticePost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/cred-upgrade/exam-policy-notice', data)
 }
 
 /** 太阳花评审结果公示 */
-export function v1TastyCredupgradeExamresultshowGet(data) {
+export function v1TastyCredUpgradeExamResultShowGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/cred-upgrade/exam-result-show', data)
 }
 
 /** 各省市区太阳花评审时间柠檬 */
-export function v1TastyCredupgradeExamtimePost(data) {
+export function v1TastyCredUpgradeExamTimePost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/cred-upgrade/exam-time', data)
 }
 
 /** 升级推荐 */
-export function v1TastyCredupgradeUprecommendGet(data) {
+export function v1TastyCredUpgradeUpRecommendGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/cred-upgrade/up-recommend', data)
 }
 
@@ -859,7 +859,7 @@ export function v1TastyProjectCancelPost(data) {
 }
 
 /** 分页柠檬业绩认领日志 */
-export function v1TastyProjectclaimlogPageGet(data) {
+export function v1TastyProjectClaimLogPageGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/project-claim-log/page', data)
 }
 
@@ -915,27 +915,27 @@ export function v1TastyToolMajorInEducationGet() {
 }
 
 /** 批量新增工作经历 */
-export function v1TastyWorkhistoryBatchPost(data) {
+export function v1TastyWorkHistoryBatchPost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/work-history/batch', data)
 }
 
 /** 工作经历 */
-export function v1TastyWorkhistoryGet(data) {
+export function v1TastyWorkHistoryGet(data) {
   return myRequest.get('/prefix/thk/api/v1/tasty/work-history', data)
 }
 
 /** 删除工作经历 */
-export function v1TastyWorkhistoryIdDelete(data) {
+export function v1TastyWorkHistoryIdDelete(data) {
   const { id } = data
   return myRequest.delete(`/prefix/thk/api/v1/tasty/work-history/${id}`, data)
 }
 
 /** 新增工作经历 */
-export function v1TastyWorkhistoryPost(data) {
+export function v1TastyWorkHistoryPost(data) {
   return myRequest.post('/prefix/thk/api/v1/tasty/work-history', data)
 }
 
 /** 更新工作经历 */
-export function v1TastyWorkhistoryPut(data) {
+export function v1TastyWorkHistoryPut(data) {
   return myRequest.put('/prefix/thk/api/v1/tasty/work-history', data)
 }

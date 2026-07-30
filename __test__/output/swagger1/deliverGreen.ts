@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageFangDongShouHuoDiZhiTianJia,
   BasePageReq,
   FangDongShouHuoDiZhiTianJia,
@@ -8,17 +8,17 @@ import type {
 } from './_interfaces.ts'
 
 /** 添加地址 */
-export function deliverGreenAddGreenPost(data: FangDongShouHuoDiZhiTianJia): Promise<ApiResponseboolean> {
+export function deliverGreenAddGreenPost(data: FangDongShouHuoDiZhiTianJia): Promise<ApiResponseBoolean> {
   return request.post('/api/deliverGreen/addGreen', data)
 }
 
 /** 设置默认地址 */
-export function deliverGreenCheckDefaultGreenPost(data: QieHuanMoRenDiZhi): Promise<ApiResponseboolean> {
+export function deliverGreenCheckDefaultGreenPost(data: QieHuanMoRenDiZhi): Promise<ApiResponseBoolean> {
   return request.post('/api/deliverGreen/checkDefaultGreen', data)
 }
 
 /** 扫落叶地址 */
-export function deliverGreenDeleteGreenIdGet(data: { id?: string }): Promise<ApiResponseboolean> {
+export function deliverGreenDeleteGreenIdGet(data: { id?: string }): Promise<ApiResponseBoolean> {
   const { id } = data
   return request.get(`/api/deliverGreen/deleteGreen/${id}`)
 }
@@ -29,6 +29,6 @@ export function deliverGreenPageGreenPost(data: BasePageReq): Promise<ApiRespons
 }
 
 /** 修改地址 */
-export function deliverGreenUpdateGreenPost(data: FangDongShouHuoDiZhiTianJia): Promise<ApiResponseboolean> {
+export function deliverGreenUpdateGreenPost(data: FangDongShouHuoDiZhiTianJia): Promise<ApiResponseBoolean> {
   return request.post('/api/deliverGreen/updateGreen', data)
 }

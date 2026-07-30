@@ -2,7 +2,7 @@ const request: any = () => {}
 import type {
   ApiResponseComPageContactResp,
   ApiResponseComPageXiaoDaoXiaoXiQiuQianXiangYing,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseXiaoDaoXiaoXi,
   ChuangJianXiaoDaoXiaoXi,
   ContactReq,
@@ -11,17 +11,17 @@ import type {
 } from './_interfaces.ts'
 
 /** 清空小道消息 */
-export function hiallClearHiallPost(data: QingKongXiaoXiJiLu): Promise<ApiResponseobject> {
+export function hiallClearHiallPost(data: QingKongXiaoXiJiLu): Promise<ApiResponseObject> {
   return request.post('/api/hiall/clearHiall', data)
 }
 
 /** 清空小道消息 */
-export function hiallClearHiallPost(data: { channel?: string; req?: QingKongXiaoXiJiLu }): Promise<ApiResponseobject> {
+export function hiallClearHiallPost(data: { channel?: string; req?: QingKongXiaoXiJiLu }): Promise<ApiResponseObject> {
   return request.post('/hiall/clearHiall', data)
 }
 
 /** 创建小道消息/发起瓜子天/进入部落瓜子 */
-export function hiallCreatePost(data: ChuangJianXiaoDaoXiaoXi): Promise<ApiResponseobject> {
+export function hiallCreatePost(data: ChuangJianXiaoDaoXiaoXi): Promise<ApiResponseObject> {
   return request.post('/api/hiall/create', data)
 }
 

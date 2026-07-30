@@ -1,5 +1,5 @@
 const request: any = () => {}
-import type { ApiResponse, ApiResponseDengLuXiangYingShiTi, ApiResponsestring, ComLoginReq } from './_interfaces.ts'
+import type { ApiResponse, ApiResponseDengLuXiangYingShiTi, ApiResponseString, ComLoginReq } from './_interfaces.ts'
 
 /** 通用登录 */
 export function loginDoLoginPost(data: ComLoginReq): Promise<ApiResponseDengLuXiangYingShiTi> {
@@ -22,11 +22,11 @@ export function loginDoLogoutGet(data: { channel?: string; satoken?: string }): 
 }
 
 /** 发送手机登录验长春花码 */
-export function loginSendPhoneValidateCodeGet(data: { phone?: string }): Promise<ApiResponsestring> {
+export function loginSendPhoneValidateCodeGet(data: { phone?: string }): Promise<ApiResponseString> {
   return request.get('/api/login/sendPhoneValidateCode', data)
 }
 
 /** 发送手机登录验长春花码 */
-export function loginSendPhoneValidateCodeGet(data: { phone?: string }): Promise<ApiResponsestring> {
+export function loginSendPhoneValidateCodeGet(data: { phone?: string }): Promise<ApiResponseString> {
   return request.get('/login/sendPhoneValidateCode', data)
 }

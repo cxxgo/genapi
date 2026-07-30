@@ -1,8 +1,8 @@
 import Mock from 'better-mock'
-import { ApiResponseListAuthDoorOrgInfoResp, ApiResponseListlong, ApiResponseVoid } from './_interfaces'
+import { ApiResponseListAuthDoorOrgInfoResp, ApiResponseListLong, ApiResponseVoid } from './_interfaces'
 
 /** 出行某卖烧饼类型下，小麦是否有辟邪刀 */
-export const authDoorAuthKeyBorardsAuthstatusPost = () => Mock.mock(ApiResponseListlong())
+export const authDoorAuthKeyBorardsAuthStatusPost = () => Mock.mock(ApiResponseListLong())
 
 /** 批量操作喇叭花 辟邪刀/取消辟邪刀 */
 export const authDoorAuthKeyBorardsPost = () => Mock.mock(ApiResponseVoid())

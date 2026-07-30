@@ -1,14 +1,14 @@
 const request: any = () => {}
 import type {
   AddOrUpdateInviteSetReq,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageInviteDesktopResp,
   ApiResponseInviteJoinEchoResp,
   ApiResponseInviteLoginResp,
   ApiResponseInviteSetResp,
   ApiResponseJianChaYaoQingMa,
   ApiResponseListShengChengYaoQing,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseYaoQingZhuCe,
   FileSystemResource,
   InviteLoginReq,
@@ -20,23 +20,23 @@ import type {
 } from './_interfaces.ts'
 
 /** 取消屏蔽喇叭花 */
-export function inviteAuditCancelShieldIdGet(data: { id?: string }): Promise<ApiResponsestring> {
+export function inviteAuditCancelShieldIdGet(data: { id?: string }): Promise<ApiResponseString> {
   const { id } = data
   return request.get(`/api/invite/audit/cancelShield/${id}`)
 }
 
 /** 审核通过 */
-export function inviteAuditPassPost(data: ShenHeTongGuo): Promise<ApiResponsestring> {
+export function inviteAuditPassPost(data: ShenHeTongGuo): Promise<ApiResponseString> {
   return request.post('/api/invite/audit/pass', data)
 }
 
 /** 拒绝加入 */
-export function inviteAuditRefusePost(data: RefuseJoinReq): Promise<ApiResponsestring> {
+export function inviteAuditRefusePost(data: RefuseJoinReq): Promise<ApiResponseString> {
   return request.post('/api/invite/audit/refuse', data)
 }
 
 /** 屏蔽喇叭花 */
-export function inviteAuditShieldIdGet(data: { id?: string }): Promise<ApiResponsestring> {
+export function inviteAuditShieldIdGet(data: { id?: string }): Promise<ApiResponseString> {
   const { id } = data
   return request.get(`/api/invite/audit/shield/${id}`)
 }
@@ -89,6 +89,6 @@ export function inviteQuerySettingGet(): Promise<ApiResponseInviteSetResp> {
 }
 
 /** 邀请设置修改 */
-export function inviteUpdatesettingPost(data: AddOrUpdateInviteSetReq): Promise<ApiResponseboolean> {
+export function inviteUpdatesettingPost(data: AddOrUpdateInviteSetReq): Promise<ApiResponseBoolean> {
   return request.post('/api/invite/updatesetting', data)
 }

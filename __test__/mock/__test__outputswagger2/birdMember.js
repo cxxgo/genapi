@@ -1,7 +1,7 @@
 import Mock from 'better-mock'
 import {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageNiaoWoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseListNiaoWoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseMemberBirdStatusResp,
@@ -21,7 +21,7 @@ export const birdMemberDeletePost = () => Mock.mock(ApiResponse())
 export const birdMemberDetailPost = () => Mock.mock(ApiResponseNiaoWoChengYuanXinXiDuiXiangBirdMemberResp())
 
 /** 是否是鸟窝成员 */
-export const birdMemberExistInBirdPost = () => Mock.mock(ApiResponseboolean())
+export const birdMemberExistInBirdPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 退出鸟窝瓜子 */
 export const birdMemberLeaveBirdPost = () => Mock.mock(ApiResponse())

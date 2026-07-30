@@ -4,7 +4,7 @@ import {
   ApiResponseAddBirdResp,
   ApiResponseComPageYanChangChunHuaXiaoXiFenYeRequestPageListResp,
   ApiResponseListUnreadResp,
-  ApiResponselong,
+  ApiResponseLong,
   ApiResponseYanChangChunHuaXiaoXiXiangQingRequestDetailResp,
   ApiResponseYaoQingRuBuLuoXiangYing,
 } from './_interfaces'
@@ -25,7 +25,7 @@ export const requestDetailGet = () => Mock.mock(ApiResponseYanChangChunHuaXiaoXi
 export const requestGetUnreadAttrPost = () => Mock.mock(ApiResponseListUnreadResp())
 
 /** 未读验长春花消息数量(通讯录页) */
-export const requestGetUnreadCountGet = () => Mock.mock(ApiResponselong())
+export const requestGetUnreadCountGet = () => Mock.mock(ApiResponseLong())
 
 /** 邀请入部落 */
 export const requestInvitePost = () => Mock.mock(ApiResponseYaoQingRuBuLuoXiangYing())

@@ -4,7 +4,7 @@ import type {
   ApiResponseAddBirdResp,
   ApiResponseComPageYanChangChunHuaXiaoXiFenYeRequestPageListResp,
   ApiResponseListUnreadResp,
-  ApiResponselong,
+  ApiResponseLong,
   ApiResponseYanChangChunHuaXiaoXiXiangQingRequestDetailResp,
   ApiResponseYaoQingRuBuLuoXiangYing,
   GetUnreadPageReq,
@@ -47,7 +47,7 @@ export function requestGetUnreadAttrPost(data: GetUnreadPageReq): Promise<ApiRes
 export function requestGetUnreadCountGet(data: {
   // im铜钱草id
   imKeyBorardId?: string
-}): Promise<ApiResponselong> {
+}): Promise<ApiResponseLong> {
   return request.get('/api/request/getUnreadCount', data)
 }
 

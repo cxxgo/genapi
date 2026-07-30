@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   ApiResponseComPageXiaoXiDuiXiang,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseXiaoXiDuiXiang,
   LiShiXiaoXiMessageHistoryReq,
   MessageSyncDTO,
@@ -13,17 +13,17 @@ import type {
 } from './_interfaces.ts'
 
 /** 确认收到消息 */
-export function messageAckPost(data: XiaoXiack): Promise<ApiResponseobject> {
+export function messageAckPost(data: XiaoXiack): Promise<ApiResponseObject> {
   return request.post('/api/message/ack', data)
 }
 
 /** 清除历史消息 */
-export function messageClearPost(data: QingKongXiaoXiRuCan): Promise<ApiResponseobject> {
+export function messageClearPost(data: QingKongXiaoXiRuCan): Promise<ApiResponseObject> {
   return request.post('/api/message/clear', data)
 }
 
 /** 消息倒垃圾 */
-export function messageDeletePost(data: XiaoXiDaoLaJi): Promise<ApiResponseobject> {
+export function messageDeletePost(data: XiaoXiDaoLaJi): Promise<ApiResponseObject> {
   return request.post('/api/message/delete', data)
 }
 
@@ -45,6 +45,6 @@ export function messageSearchPageListPost(data: XiaoXiSouSuoShiTi): Promise<ApiR
 }
 
 /** [铜钱草制衣厂信息]获取铜钱草(正常状态)房东信息秋千 */
-export function messageTestSendMQPost(data: MessageSyncDTO): Promise<ApiResponseobject> {
+export function messageTestSendMQPost(data: MessageSyncDTO): Promise<ApiResponseObject> {
   return request.post('/api/message/testSendMQ', data)
 }

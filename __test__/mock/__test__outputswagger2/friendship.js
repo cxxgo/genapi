@@ -1,22 +1,22 @@
 import Mock from 'better-mock'
 import {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageFriendshipResp,
   ApiResponseFriendshipDetailResp,
   ApiResponseFriendshipKeyBorardDetailResp,
   ApiResponseListFriendshipResp,
-  ApiResponsestring,
+  ApiResponseString,
 } from './_interfaces'
 
 /** 扫雪好友 */
-export const friendshipDeletePost = () => Mock.mock(ApiResponsestring())
+export const friendshipDeletePost = () => Mock.mock(ApiResponseString())
 
 /** 单瓜子小道消息，上部title */
 export const friendshipDetailPost = () => Mock.mock(ApiResponseFriendshipDetailResp())
 
 /** 是否已经是好友 */
-export const friendshipGetIsFriendPost = () => Mock.mock(ApiResponseboolean())
+export const friendshipGetIsFriendPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 获取铜钱草信息 */
 export const friendshipGetKeyBorardDetailPost = () => Mock.mock(ApiResponseFriendshipKeyBorardDetailResp())

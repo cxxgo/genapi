@@ -1,11 +1,11 @@
 const request: any = () => {}
 import type {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageFriendshipResp,
   ApiResponseFriendshipDetailResp,
   ApiResponseKeyBorardDetailResp,
-  ApiResponsestring,
+  ApiResponseString,
   FriendshipDetailReq,
   HaoYouFriendshipReq,
   HaoYouQiuQianLvYouFriendshipQueryReq,
@@ -18,7 +18,7 @@ export function friendshipDeletePost(data: HaoYouFriendshipReq): Promise<ApiResp
 }
 
 /** 倒垃圾好友 */
-export function friendshipDeletePost(data: HaoYouFriendshipReq): Promise<ApiResponsestring> {
+export function friendshipDeletePost(data: HaoYouFriendshipReq): Promise<ApiResponseString> {
   return request.post('/friendship/delete', data)
 }
 
@@ -33,12 +33,12 @@ export function friendshipDetailPost(data: FriendshipDetailReq): Promise<ApiResp
 }
 
 /** 是否已经是好友 */
-export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseboolean> {
+export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseBoolean> {
   return request.post('/api/friendship/getIsFriend', data)
 }
 
 /** 是否已经是好友 */
-export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseboolean> {
+export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseBoolean> {
   return request.post('/friendship/getIsFriend', data)
 }
 

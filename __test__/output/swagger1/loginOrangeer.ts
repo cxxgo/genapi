@@ -1,10 +1,10 @@
 const request: any = () => {}
 import type {
   AliMpLoginReq,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComLoginResp,
   ApiResponseOrangeerResultResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
   ComLoginReq,
   SetPassWordReq,
@@ -67,12 +67,12 @@ export function loginOrangeerComLoginPost(data: ComLoginReq): Promise<ApiRespons
 }
 
 /** 出行喇叭花密码未设置是否提醒 */
-export function loginOrangeerJudgePassWordIsSetGet(): Promise<ApiResponseboolean> {
+export function loginOrangeerJudgePassWordIsSetGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/loginOrangeer/JudgePassWordIsSet')
 }
 
 /** 退出登录 */
-export function loginOrangeerLoginoutGet(): Promise<ApiResponseboolean> {
+export function loginOrangeerLoginoutGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/loginOrangeer/loginout')
 }
 
@@ -82,12 +82,12 @@ export function loginOrangeerOrangeerPost(data: ZhuCeQingQiu): Promise<ApiRespon
 }
 
 /** 仅测试-密码加密 */
-export function loginOrangeerPasswordCryGet(data: { password?: string }): Promise<ApiResponsestring> {
+export function loginOrangeerPasswordCryGet(data: { password?: string }): Promise<ApiResponseString> {
   return request.get('/api/loginOrangeer/passwordCry', data)
 }
 
 /** 找回密码 */
-export function loginOrangeerRetrievePasswordPost(data: ZhaoHuiMiMa): Promise<ApiResponsestring> {
+export function loginOrangeerRetrievePasswordPost(data: ZhaoHuiMiMa): Promise<ApiResponseString> {
   return request.post('/api/loginOrangeer/retrievePassword', data)
 }
 
@@ -110,12 +110,12 @@ export function loginOrangeerSendPhoneValidateCodeVerificationEnumGet(data: {
     | 'SUPER_ACCEPT'
     | 'SUPER_TRANSFER'
     | 'UPDATE_PASSWORD'
-}): Promise<ApiResponsestring> {
+}): Promise<ApiResponseString> {
   const { mobile, uuid, verificationEnum } = data
   return request.get(`/api/loginOrangeer/sendPhoneValidateCode/${verificationEnum}`, { mobile, uuid })
 }
 
 /** 设置密码 */
-export function loginOrangeerSetPassWordPost(data: SetPassWordReq): Promise<ApiResponseboolean> {
+export function loginOrangeerSetPassWordPost(data: SetPassWordReq): Promise<ApiResponseBoolean> {
   return request.post('/api/loginOrangeer/setPassWord', data)
 }

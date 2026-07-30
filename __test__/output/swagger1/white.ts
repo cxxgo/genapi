@@ -2,7 +2,7 @@ const request: any = () => {}
 import type {
   ApiResponse,
   ApiResponseListSelectorDesktopResp,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   ApiResponseListWhiteResp,
   ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo,
   ApiResponseVoid,
@@ -113,7 +113,7 @@ export function whiteWhiteTreeComplexGet(data: {
   whiteId?: string
   // 小金库太阳花
   whiteName?: string
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/white/whiteTreeComplex', data)
 }
 
@@ -135,7 +135,7 @@ export function whiteWhiteTreeGet(data: {
   whiteId?: string
   // 小金库太阳花
   whiteName?: string
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/white/whiteTree', data)
 }
 
@@ -157,6 +157,6 @@ export function whiteWhiteTreeInfoGet(data: {
   whiteId?: string
   // 小金库太阳花
   whiteName?: string
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/white/whiteTreeInfo', data)
 }

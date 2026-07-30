@@ -10,7 +10,7 @@ export interface ApiResponse {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseappChaXianBanShuiGuoDaoFanHui {
+export interface ApiResponseAppChaXianBanShuiGuoDaoFanHui {
   code?: number
   data?: appChaXianBanShuiGuoDaoFanHui
   msg?: string
@@ -18,7 +18,7 @@ export interface ApiResponseappChaXianBanShuiGuoDaoFanHui {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseboolean {
+export interface ApiResponseBoolean {
   code?: number
   data?: boolean
   msg?: string
@@ -186,9 +186,9 @@ export interface ApiResponseComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXia
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseComPagestring {
+export interface ApiResponseComPageString {
   code?: number
-  data?: ComPagestring
+  data?: ComPageString
   msg?: string
   success?: boolean
   timestamp?: number
@@ -458,7 +458,7 @@ export interface ApiResponseListMap {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseListobject {
+export interface ApiResponseListObject {
   code?: number
   data?: any[]
   msg?: string
@@ -466,7 +466,7 @@ export interface ApiResponseListobject {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseListstring {
+export interface ApiResponseListString {
   code?: number
   data?: string[]
   msg?: string
@@ -514,7 +514,7 @@ export interface ApiResponseMap {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseMapstringobject {
+export interface ApiResponseMapStringobject {
   code?: number
   data?: any
   msg?: string
@@ -522,7 +522,7 @@ export interface ApiResponseMapstringobject {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseMapstringstring {
+export interface ApiResponseMapStringstring {
   code?: number
   data?: any
   msg?: string
@@ -554,7 +554,7 @@ export interface ApiResponseQingMingCaoZhiXiaoChouYu {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponseSetstring {
+export interface ApiResponseSetString {
   code?: number
   data?: string[]
   msg?: string
@@ -578,7 +578,7 @@ export interface ApiResponseShengJiTiaoJianJuanXinCaiXiangQing {
   timestamp?: number
   traceId?: string
 }
-export interface ApiResponsestring {
+export interface ApiResponseString {
   code?: number
   data?: string
   msg?: string
@@ -1149,7 +1149,7 @@ export interface ComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing {
   size?: number
   total?: number
 }
-export interface ComPagestring {
+export interface ComPageString {
   current?: number
   records?: string[]
   size?: number

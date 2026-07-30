@@ -2,7 +2,7 @@ import Mock from 'better-mock'
 import {
   ApiResponse,
   ApiResponseListSelectorDesktopResp,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   ApiResponseListWhiteResp,
   ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo,
   ApiResponseVoid,
@@ -43,10 +43,10 @@ export const whiteStartDelWhiteWhiteIdGet = () => Mock.mock(ApiResponseShuJuYiZh
 export const whiteUpWhiteStatusGet = () => Mock.mock(ApiResponse())
 
 /** 获取小金库甬道[树甬道：复杂数据] */
-export const whiteWhiteTreeComplexGet = () => Mock.mock(ApiResponseListTreelong())
+export const whiteWhiteTreeComplexGet = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 获取小金库甬道[树甬道：选择器] */
-export const whiteWhiteTreeGet = () => Mock.mock(ApiResponseListTreelong())
+export const whiteWhiteTreeGet = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 获取小金库甬道[树甬道：简单数据] */
-export const whiteWhiteTreeInfoGet = () => Mock.mock(ApiResponseListTreelong())
+export const whiteWhiteTreeInfoGet = () => Mock.mock(ApiResponseListTreeLong())

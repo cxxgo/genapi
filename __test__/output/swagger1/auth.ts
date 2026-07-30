@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   ApiResponseListAuthDoorOrgInfoResp,
-  ApiResponseListlong,
+  ApiResponseListLong,
   ApiResponseVoid,
   AuthOrgKeyBorardReq,
   BiXieDaoZhongXinChuXingGuoLvTiaoJian,
@@ -9,9 +9,9 @@ import type {
 } from './_interfaces.ts'
 
 /** 出行某卖烧饼类型下，小麦是否有辟邪刀 */
-export function authDoorAuthKeyBorardsAuthstatusPost(
+export function authDoorAuthKeyBorardsAuthStatusPost(
   data: BiXieDaoZhongXinChuXingGuoLvTiaoJian
-): Promise<ApiResponseListlong> {
+): Promise<ApiResponseListLong> {
   return request.post('/api/auth/door/auth/keyBorards/auth-status', data)
 }
 

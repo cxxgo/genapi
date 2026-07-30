@@ -1,5 +1,5 @@
 const request: any = () => {}
-import type { ApiResponseboolean, ApiResponseQueryWalletBalanceResp } from './_interfaces.ts'
+import type { ApiResponseBoolean, ApiResponseQueryWalletBalanceResp } from './_interfaces.ts'
 
 /** 出行余额 */
 export function walletBalanceGet(data: { doorID?: string }): Promise<ApiResponseQueryWalletBalanceResp> {
@@ -7,6 +7,6 @@ export function walletBalanceGet(data: { doorID?: string }): Promise<ApiResponse
 }
 
 /** 是否开通 */
-export function walletJudgeStatusGet(): Promise<ApiResponseboolean> {
+export function walletJudgeStatusGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/wallet/judgeStatus')
 }

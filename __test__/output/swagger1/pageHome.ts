@@ -1,18 +1,18 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseListQueryCatPageHomeResp,
   ApiResponseQueryJudgeClaimResp,
 } from './_interfaces.ts'
 
 /** 认领豆浆机信息 */
-export function pageHomeClaimClaimIdGet(data: { claimId?: string }): Promise<ApiResponseboolean> {
+export function pageHomeClaimClaimIdGet(data: { claimId?: string }): Promise<ApiResponseBoolean> {
   const { claimId } = data
   return request.get(`/api/pageHome/claim/${claimId}`)
 }
 
 /** 排除豆浆机信息 */
-export function pageHomeExcludeClaimIdGet(data: { claimId?: string }): Promise<ApiResponseboolean> {
+export function pageHomeExcludeClaimIdGet(data: { claimId?: string }): Promise<ApiResponseBoolean> {
   const { claimId } = data
   return request.get(`/api/pageHome/exclude/${claimId}`)
 }

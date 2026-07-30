@@ -4,7 +4,7 @@ import {
   ApiResponseComPageSearchBeforeAddFriendResp,
   ApiResponseKeyBorardBindResp,
   ApiResponseListSwitchKeyBorardListResp,
-  ApiResponseMapstringSearchMapResp,
+  ApiResponseMapStringSearchMapResp,
 } from './_interfaces'
 
 /** 结盟设备 */
@@ -20,10 +20,10 @@ export const commonSearchBeforeAddFriendPost = () => Mock.mock(ApiResponseComPag
 export const commonSearchBeforeAddFriendPost = () => Mock.mock(ApiResponseComPageSearchBeforeAddFriendResp())
 
 /** 聚合搜索 */
-export const commonSearchPost = () => Mock.mock(ApiResponseMapstringSearchMapResp())
+export const commonSearchPost = () => Mock.mock(ApiResponseMapStringSearchMapResp())
 
 /** 聚合搜索 */
-export const commonSearchPost = () => Mock.mock(ApiResponseMapstringSearchMapResp())
+export const commonSearchPost = () => Mock.mock(ApiResponseMapStringSearchMapResp())
 
 /** 按照类型搜索 */
 export const commonSearchTypePost = () => Mock.mock(ApiResponseComPageCommonSearchResp())

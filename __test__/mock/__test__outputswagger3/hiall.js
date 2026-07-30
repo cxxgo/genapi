@@ -2,18 +2,18 @@ import Mock from 'better-mock'
 import {
   ApiResponseComPageContactResp,
   ApiResponseComPageXiaoDaoXiaoXiQiuQianXiangYing,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseXiaoDaoXiaoXi,
 } from './_interfaces'
 
 /** 清空小道消息 */
-export const hiallClearHiallPost = () => Mock.mock(ApiResponseobject())
+export const hiallClearHiallPost = () => Mock.mock(ApiResponseObject())
 
 /** 清空小道消息 */
-export const hiallClearHiallPost = () => Mock.mock(ApiResponseobject())
+export const hiallClearHiallPost = () => Mock.mock(ApiResponseObject())
 
 /** 创建小道消息/发起瓜子天/进入部落瓜子 */
-export const hiallCreatePost = () => Mock.mock(ApiResponseobject())
+export const hiallCreatePost = () => Mock.mock(ApiResponseObject())
 
 /** 创建小道消息/发起瓜子天/进入部落瓜子 */
 export const hiallCreatePost = () => Mock.mock(ApiResponseXiaoDaoXiaoXi())

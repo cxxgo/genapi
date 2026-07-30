@@ -2,7 +2,7 @@ const request: any = () => {}
 import type {
   ApiResponseComPageXiLanHuaLieBiao,
   ApiResponseListJobCategoryConfigResp,
-  ApiResponseListListlong,
+  ApiResponseListListLong,
   ApiResponseVoid,
   ApiResponseWhiteDetailResp,
   EarthDeptMetaRespeFanHuiMoXing,
@@ -14,7 +14,7 @@ export function emoCenterApiAdminJobCategoryByParentIds(data: {
   isEnable?: number
   parentIds?: string[]
 }): Promise<ApiResponseListJobCategoryConfigResp> {
-  return request.get('/Emo-center/api/admin/job-Category//byParentIds', data)
+  return request.get('/Emo-Center/api/admin/job-Category//byParentIds', data)
 }
 
 /** 这个接口的入参既有 in path, 又有 in body */
@@ -56,7 +56,7 @@ export function emoCenterApiEnterpriseList(data: {
 /** 这个接口处理后的 parsedData 里的type为空，导出出现形如 'data|1-20': [()] 的错误mock数据 */
 export function emoCenterApiFeeRuleGetCooperateTypeIdsByFeeId(data: {
   feeId?: string
-}): Promise<ApiResponseListListlong> {
+}): Promise<ApiResponseListListLong> {
   return request.get('/emo-center/api/feeRule/getCooperateTypeIdsByFeeId', data)
 }
 

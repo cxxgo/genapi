@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   ApiResponseComPageContactResp,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseUnReadComPageXiaoDaoXiaoXiYongDaoXiangYing,
   ApiResponseXiaoDaoXiaoXi,
   ChuangJianXiaoDaoXiaoXi,
@@ -11,7 +11,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 清除小道消息[上帝减去对应聪明未读消息总量] */
-export function hiallClearHiallPost(data: QingKongXiaoXiJiLu): Promise<ApiResponseobject> {
+export function hiallClearHiallPost(data: QingKongXiaoXiJiLu): Promise<ApiResponseObject> {
   return request.post('/api/hiall/clearHiall', data)
 }
 

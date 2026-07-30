@@ -4,7 +4,7 @@ import type {
   ApiResponseComPageDesktopComplexResp,
   ApiResponseDesktopAllInfoResp,
   ApiResponseListExtWhiteResp,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   ApiResponseShiftDesktopResp,
   ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo,
   ApiResponseVoid,
@@ -54,7 +54,7 @@ export function desktopGetDesktopByDesktopIdGet(data: { desktopId?: string }): P
 }
 
 /** 获取小金库树_我美丽小金库 */
-export function desktopMyWhiteTreeCountGet(): Promise<ApiResponseListTreelong> {
+export function desktopMyWhiteTreeCountGet(): Promise<ApiResponseListTreeLong> {
   return request.get('/api/desktop/myWhiteTreeCount')
 }
 
@@ -181,6 +181,6 @@ export function desktopStopStartDesktopIdGet(data: {
 export function desktopWhiteTreeCountGet(data: {
   whiteCode?: string
   whiteName?: string
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/desktop/whiteTreeCount', data)
 }

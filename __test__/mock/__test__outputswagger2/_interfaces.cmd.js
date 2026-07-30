@@ -31,7 +31,7 @@ function ApiResponseAddBirdResp() {
     traceId: '@guid',
   }
 }
-function ApiResponsealiyunSTSJianQuanFanHuiZhi() {
+function ApiResponseAliyunSTSJianQuanFanHuiZhi() {
   return {
     code: 200,
     data: aliyunSTSJianQuanFanHuiZhi(),
@@ -61,7 +61,7 @@ function ApiResponseBanBen() {
     traceId: '@guid',
   }
 }
-function ApiResponseboolean() {
+function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -391,7 +391,7 @@ function ApiResponseListXiaoXiDuiXiang() {
     traceId: '@guid',
   }
 }
-function ApiResponselong() {
+function ApiResponseLong() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -401,7 +401,7 @@ function ApiResponselong() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringSearchMapResp() {
+function ApiResponseMapStringSearchMapResp() {
   return {
     code: 200,
     data: SearchMapResp(),
@@ -471,7 +471,7 @@ function ApiResponseNiaoWoWenJianShangChuanXiangYingShiTi() {
     traceId: '@guid',
   }
 }
-function ApiResponseobject() {
+function ApiResponseObject() {
   return {
     code: 200,
     data: '',
@@ -521,7 +521,7 @@ function ApiResponseShangChuanALiYunQianMingXiangYing() {
     traceId: '@guid',
   }
 }
-function ApiResponsestring() {
+function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -2234,10 +2234,10 @@ module.exports = {
   aliyunSTSJianQuanFanHuiZhi,
   ApiResponse,
   ApiResponseAddBirdResp,
-  ApiResponsealiyunSTSJianQuanFanHuiZhi,
+  ApiResponseAliyunSTSJianQuanFanHuiZhi,
   ApiResponseAtListAndAckSequenceResp,
   ApiResponseBanBen,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageCommonSearchResp,
   ApiResponseComPageContactResp,
   ApiResponseComPageDaDuNanTongQianCaoYongDaoWhiteKeyBorardResp,
@@ -2270,20 +2270,20 @@ module.exports = {
   ApiResponseListSwitchKeyBorardListResp,
   ApiResponseListUnreadResp,
   ApiResponseListXiaoXiDuiXiang,
-  ApiResponselong,
-  ApiResponseMapstringSearchMapResp,
+  ApiResponseLong,
+  ApiResponseMapStringSearchMapResp,
   ApiResponseMemberBirdStatusResp,
   ApiResponseNaBuMaiShaoBingNiaoWoBaoCunChuCan,
   ApiResponseNiaoWoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseNiaoWoDuiXiangBirdDetailResp,
   ApiResponseNiaoWoDuiXiangBirdResp,
   ApiResponseNiaoWoWenJianShangChuanXiangYingShiTi,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponsePutFileResp,
   ApiResponseQianMingWenJianXiangYing,
   ApiResponseQueryLastMessageResp,
   ApiResponseShangChuanALiYunQianMingXiangYing,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseUnReadComPageXiaoDaoXiaoXiYongDaoXiangYing,
   ApiResponseVoid,
   ApiResponseWaterFallPageKeyBorardBlackResp,

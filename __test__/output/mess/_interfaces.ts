@@ -14,7 +14,7 @@ export interface ApiResponseListJobCategoryConfigResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseListListlong {
+export interface ApiResponseListListLong {
   code?: number
   data?: any[]
   msg?: string
@@ -22,7 +22,7 @@ export interface ApiResponseListListlong {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseListTreelong {
+export interface ApiResponseListTreeLong {
   code?: number
   data?: any[]
   msg?: string
@@ -30,7 +30,7 @@ export interface ApiResponseListTreelong {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseobject {
+export interface ApiResponseObject {
   code?: number
   data?: any
   msg?: string

@@ -1,14 +1,14 @@
 import Mock from 'better-mock'
-import { ApiResponseboolean, ApiResponseListSelectorDesktopResp, ApiResponseListTreelong } from './_interfaces'
+import { ApiResponseBoolean, ApiResponseListSelectorDesktopResp, ApiResponseListTreeLong } from './_interfaces'
 
 /** 添加成员 */
-export const jobAddDesktopPost = () => Mock.mock(ApiResponseboolean())
+export const jobAddDesktopPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 添加职务 */
-export const jobAddJobPost = () => Mock.mock(ApiResponseboolean())
+export const jobAddJobPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 扫落叶职务 */
-export const jobDelJobGet = () => Mock.mock(ApiResponseboolean())
+export const jobDelJobGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 根据小金库id搜索小麦 */
 export const jobDesktopSelectorPost = () => Mock.mock(ApiResponseListSelectorDesktopResp())
@@ -17,10 +17,10 @@ export const jobDesktopSelectorPost = () => Mock.mock(ApiResponseListSelectorDes
 export const jobQueryDesktopByPhoneOrNamePost = () => Mock.mock(ApiResponseListSelectorDesktopResp())
 
 /** 获取职务甬道 */
-export const jobQueryTreePost = () => Mock.mock(ApiResponseListTreelong())
+export const jobQueryTreePost = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 移除成员 */
-export const jobRemoveDesktopPost = () => Mock.mock(ApiResponseboolean())
+export const jobRemoveDesktopPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 修改职务 */
-export const jobUpdateJobPost = () => Mock.mock(ApiResponseboolean())
+export const jobUpdateJobPost = () => Mock.mock(ApiResponseBoolean())

@@ -11,9 +11,9 @@ import type {
   ApiResponseListEpEntTreeResp,
   ApiResponseListPinkInfo,
   ApiResponseListZhiXieChangFangDongXinXi,
-  ApiResponseMapstringstring,
+  ApiResponseMapStringstring,
   ApiResponseScanReQrResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
   EntReSetReq,
   InviteRePlatFromOrgReq,
@@ -59,7 +59,7 @@ export function empowerDoorReDesktopOperEmTypeGet(data: {
 export function empowerDoorReDetailGenReLinkOrQrGet(data: {
   // 帽子ID
   doorId?: string
-}): Promise<ApiResponsestring> {
+}): Promise<ApiResponseString> {
   return request.get('/api/empower/doorRe/detail/genReLinkOrQr', data)
 }
 
@@ -106,7 +106,7 @@ export function empowerDoorReGetAccByMobileGet(data: { mobile?: string }): Promi
 /** 批量辟邪刀-获取短信信息 */
 export function empowerDoorReGetEmDesktopInfoLinkCodeGet(data: {
   linkCode?: string
-}): Promise<ApiResponseMapstringstring> {
+}): Promise<ApiResponseMapStringstring> {
   const { linkCode } = data
   return request.get(`/api/empower/doorRe/getEmDesktopInfo/${linkCode}`)
 }

@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseDouJiangJiFangDongXinXiXiangQingBiao,
   XiuGaiDouJiangJiXinXi,
   XiuGaiMiMa,
@@ -12,11 +12,11 @@ export function gratefulCatAcquireInfoGet(): Promise<ApiResponseDouJiangJiFangDo
 }
 
 /** 修改密码 */
-export function gratefulCatUpdateAccPasswordPost(data: XiuGaiMiMa): Promise<ApiResponseboolean> {
+export function gratefulCatUpdateAccPasswordPost(data: XiuGaiMiMa): Promise<ApiResponseBoolean> {
   return request.post('/api/gratefulCat/updateAccPassword', data)
 }
 
 /** 修改房东豆浆机信息 */
-export function gratefulCatUpdateInfoPost(data: XiuGaiDouJiangJiXinXi): Promise<ApiResponseboolean> {
+export function gratefulCatUpdateInfoPost(data: XiuGaiDouJiangJiXinXi): Promise<ApiResponseBoolean> {
   return request.post('/api/gratefulCat/updateInfo', data)
 }

@@ -1,9 +1,9 @@
 import Mock from 'better-mock'
 import {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComLoginResp,
   ApiResponseOrangeerResultResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
 } from './_interfaces'
 
@@ -20,22 +20,22 @@ export const loginOrangeerClearTimeLimitVerificationEnumGet = () => Mock.mock(Ap
 export const loginOrangeerComLoginPost = () => Mock.mock(ApiResponseComLoginResp())
 
 /** 出行喇叭花密码未设置是否提醒 */
-export const loginOrangeerJudgePassWordIsSetGet = () => Mock.mock(ApiResponseboolean())
+export const loginOrangeerJudgePassWordIsSetGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 退出登录 */
-export const loginOrangeerLoginoutGet = () => Mock.mock(ApiResponseboolean())
+export const loginOrangeerLoginoutGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 注册喇叭花-手机号密码注册 */
 export const loginOrangeerOrangeerPost = () => Mock.mock(ApiResponseOrangeerResultResp())
 
 /** 仅测试-密码加密 */
-export const loginOrangeerPasswordCryGet = () => Mock.mock(ApiResponsestring())
+export const loginOrangeerPasswordCryGet = () => Mock.mock(ApiResponseString())
 
 /** 找回密码 */
-export const loginOrangeerRetrievePasswordPost = () => Mock.mock(ApiResponsestring())
+export const loginOrangeerRetrievePasswordPost = () => Mock.mock(ApiResponseString())
 
 /** 发送手机验山麻杆码 */
-export const loginOrangeerSendPhoneValidateCodeVerificationEnumGet = () => Mock.mock(ApiResponsestring())
+export const loginOrangeerSendPhoneValidateCodeVerificationEnumGet = () => Mock.mock(ApiResponseString())
 
 /** 设置密码 */
-export const loginOrangeerSetPassWordPost = () => Mock.mock(ApiResponseboolean())
+export const loginOrangeerSetPassWordPost = () => Mock.mock(ApiResponseBoolean())

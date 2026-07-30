@@ -1,7 +1,7 @@
 import Mock from 'better-mock'
 import {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseKeyBorardRespDuiXiang,
   ApiResponseListFangDongXinXi,
   ApiResponseQueryLastMessageResp,
@@ -17,16 +17,16 @@ export const keyBorardCatInfoGet = () => Mock.mock(ApiResponseKeyBorardRespDuiXi
 export const keyBorardGetCancelSmsCodeGet = () => Mock.mock(ApiResponse())
 
 /** 当前channel下是否已经选择房东 */
-export const keyBorardHasSelectGratefulGet = () => Mock.mock(ApiResponseboolean())
+export const keyBorardHasSelectGratefulGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 获取铜钱草(正常状态)房东信息秋千 */
 export const keyBorardListGratefulInfoGet = () => Mock.mock(ApiResponseListFangDongXinXi())
 
 /** 修改铜钱草头像 */
-export const keyBorardModifyAvatarPost = () => Mock.mock(ApiResponseboolean())
+export const keyBorardModifyAvatarPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 修改铜钱草邮箱 */
-export const keyBorardModifyEmailPost = () => Mock.mock(ApiResponseboolean())
+export const keyBorardModifyEmailPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 旅游版本类型 */
 export const keyBorardQueryAppVersionGet = () => Mock.mock(ApiResponseQueryLastMessageResp())

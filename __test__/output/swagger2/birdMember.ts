@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageNiaoWoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseListNiaoWoChengYuanXinXiDuiXiangBirdMemberResp,
   ApiResponseMemberBirdStatusResp,
@@ -38,7 +38,7 @@ export function birdMemberDetailPost(
 }
 
 /** 是否是鸟窝成员 */
-export function birdMemberExistInBirdPost(data: NiaoWoXinXiBirdDetailReq): Promise<ApiResponseboolean> {
+export function birdMemberExistInBirdPost(data: NiaoWoXinXiBirdDetailReq): Promise<ApiResponseBoolean> {
   return request.post('/api/birdMember/existInBird', data)
 }
 

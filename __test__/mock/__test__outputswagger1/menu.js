@@ -1,5 +1,5 @@
 import Mock from 'better-mock'
-import { ApiResponseListMenuResp, ApiResponseListTreelong, ApiResponseMenuResp } from './_interfaces'
+import { ApiResponseListMenuResp, ApiResponseListTreeLong, ApiResponseMenuResp } from './_interfaces'
 
 /** 获取当前小麦美丽可见菜单甬道 */
 export const menuDesktopMenuListGet = () => Mock.mock(ApiResponseListMenuResp())
@@ -8,4 +8,4 @@ export const menuDesktopMenuListGet = () => Mock.mock(ApiResponseListMenuResp())
 export const menuGetMenuMenuIdGet = () => Mock.mock(ApiResponseMenuResp())
 
 /** 获取当前小麦美丽可见菜单树 */
-export const menuTreeSelectGet = () => Mock.mock(ApiResponseListTreelong())
+export const menuTreeSelectGet = () => Mock.mock(ApiResponseListTreeLong())

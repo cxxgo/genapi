@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   ApiResponseComPageKeyBorardBlackResp,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseWaterFallPageKeyBorardBlackResp,
   BasePageReq,
 } from './_interfaces.ts'
@@ -15,7 +15,7 @@ export function keyBorardBlackPageListPost(data: BasePageReq): Promise<ApiRespon
 export function keyBorardBlackRemoveGet(data: {
   // 取消拉黑im铜钱草id
   imKeyBorardId?: string
-}): Promise<ApiResponseobject> {
+}): Promise<ApiResponseObject> {
   return request.get('/api/keyBorardBlack/remove', data)
 }
 
@@ -23,7 +23,7 @@ export function keyBorardBlackRemoveGet(data: {
 export function keyBorardBlackSaveGet(data: {
   // 被拉黑im铜钱草id
   imKeyBorardId?: string
-}): Promise<ApiResponseobject> {
+}): Promise<ApiResponseObject> {
   return request.get('/api/keyBorardBlack/save', data)
 }
 

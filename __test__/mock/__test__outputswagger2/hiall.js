@@ -1,13 +1,13 @@
 import Mock from 'better-mock'
 import {
   ApiResponseComPageContactResp,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseUnReadComPageXiaoDaoXiaoXiYongDaoXiangYing,
   ApiResponseXiaoDaoXiaoXi,
 } from './_interfaces'
 
 /** 清除小道消息[上帝减去对应聪明未读消息总量] */
-export const hiallClearHiallPost = () => Mock.mock(ApiResponseobject())
+export const hiallClearHiallPost = () => Mock.mock(ApiResponseObject())
 
 /** 创建小道消息/发起瓜子天/进入鸟窝瓜子 */
 export const hiallCreatePost = () => Mock.mock(ApiResponseXiaoDaoXiaoXi())

@@ -1,5 +1,5 @@
 const request: any = () => {}
-import type { ApiResponseListMenuResp, ApiResponseListTreelong, ApiResponseMenuResp } from './_interfaces.ts'
+import type { ApiResponseListMenuResp, ApiResponseListTreeLong, ApiResponseMenuResp } from './_interfaces.ts'
 
 /** 获取当前小麦美丽可见菜单甬道 */
 export function menuDesktopMenuListGet(data: {
@@ -31,6 +31,6 @@ export function menuTreeSelectGet(data: {
   menuName?: string
   // 菜单显示
   menuShow?: boolean
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/menu/treeSelect', data)
 }

@@ -4,8 +4,8 @@ import type {
   ApiResponseComPageDesktopComplexResp,
   ApiResponseListPinkResq,
   ApiResponseListSelectorDesktopResp,
-  ApiResponseListTreelong,
-  ApiResponselong,
+  ApiResponseListTreeLong,
+  ApiResponseLong,
   ApiResponseMenuCheckedResp,
   ApiResponsePinkInfoResq,
   ApiResponseVoid,
@@ -15,7 +15,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 加湿角色 */
-export function pinkAddPinkPost(data: PinkAddReq): Promise<ApiResponselong> {
+export function pinkAddPinkPost(data: PinkAddReq): Promise<ApiResponseLong> {
   return request.post('/api/pink/addPink', data)
 }
 
@@ -120,7 +120,7 @@ export function pinkPinkMenuTreeCheckedPinkIdGet(data: { pinkId?: string }): Pro
 }
 
 /** 加载对应角色菜单甬道树[不包含选中节点] */
-export function pinkPinkMenuTreePinkIdGet(data: { pinkId?: string }): Promise<ApiResponseListTreelong> {
+export function pinkPinkMenuTreePinkIdGet(data: { pinkId?: string }): Promise<ApiResponseListTreeLong> {
   const { pinkId } = data
   return request.get(`/api/pink/pinkMenuTree/${pinkId}`)
 }
@@ -141,7 +141,7 @@ export function pinkPinkTreeGet(data: {
   pinkName?: string
   // 状态（NORMAL正常 STOP停用）
   status?: string
-}): Promise<ApiResponseListTreelong> {
+}): Promise<ApiResponseListTreeLong> {
   return request.get('/api/pink/pinkTree', data)
 }
 

@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageNiaoWoDuiXiangBirdResp,
   ApiResponseComPageXiaoXiNaBuXiangYingShiTi,
   ApiResponseNaBuMaiShaoBingNiaoWoBaoCunChuCan,
@@ -31,7 +31,7 @@ export function innerBirdMemberBirdPageListPost(
 }
 
 /** 卖烧饼方鸟窝踢人或主动退鸟窝 */
-export function innerBirdMemberRemovePost(data: NaBuNiaoWoBaoCunRuCan): Promise<ApiResponseboolean> {
+export function innerBirdMemberRemovePost(data: NaBuNiaoWoBaoCunRuCan): Promise<ApiResponseBoolean> {
   return request.post('/inner/birdMember/remove', data)
 }
 
@@ -48,7 +48,7 @@ export function innerBirdSavePost(data: NaBuNiaoWoBaoCunRuCan): Promise<ApiRespo
 }
 
 /** 拉校友鸟窝 */
-export function innerBirdSaveSchoolMateBirdPost(data: NaBuNiaoWoBaoCunRuCan): Promise<ApiResponseboolean> {
+export function innerBirdSaveSchoolMateBirdPost(data: NaBuNiaoWoBaoCunRuCan): Promise<ApiResponseBoolean> {
   return request.post('/inner/bird/saveSchoolMateBird', data)
 }
 
@@ -65,7 +65,7 @@ export function innerFileGetUploadUrlPost(data: UploadFileReq): Promise<ApiRespo
 }
 
 /** 模拟拉鸟窝后加人入鸟窝 */
-export function innerMockMockSaveMemberPost(data: mockJiaRenRuNiaoWoRuCan): Promise<ApiResponseboolean> {
+export function innerMockMockSaveMemberPost(data: mockJiaRenRuNiaoWoRuCan): Promise<ApiResponseBoolean> {
   return request.post('/inner/mock/mockSaveMember', data)
 }
 

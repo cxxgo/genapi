@@ -1,12 +1,12 @@
 const request: any = () => {}
 import type {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageFriendshipResp,
   ApiResponseFriendshipDetailResp,
   ApiResponseFriendshipKeyBorardDetailResp,
   ApiResponseListFriendshipResp,
-  ApiResponsestring,
+  ApiResponseString,
   FriendshipDetailReq,
   HaoYouFriendshipReq,
   HaoYouYongDaoChuXingFriendshipQueryReq,
@@ -17,7 +17,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 扫雪好友 */
-export function friendshipDeletePost(data: HaoYouFriendshipReq): Promise<ApiResponsestring> {
+export function friendshipDeletePost(data: HaoYouFriendshipReq): Promise<ApiResponseString> {
   return request.post('/api/friendship/delete', data)
 }
 
@@ -27,7 +27,7 @@ export function friendshipDetailPost(data: FriendshipDetailReq): Promise<ApiResp
 }
 
 /** 是否已经是好友 */
-export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseboolean> {
+export function friendshipGetIsFriendPost(data: FriendshipDetailReq): Promise<ApiResponseBoolean> {
   return request.post('/api/friendship/getIsFriend', data)
 }
 

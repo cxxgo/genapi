@@ -25,7 +25,7 @@ export function ApiResponseAddBirdResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponseboolean() {
+export function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -355,7 +355,7 @@ export function ApiResponseListWhiteNoteResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponselong() {
+export function ApiResponseLong() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -365,7 +365,7 @@ export function ApiResponselong() {
     traceId: '@guid',
   }
 }
-export function ApiResponseMapstringSearchMapResp() {
+export function ApiResponseMapStringSearchMapResp() {
   return {
     code: 200,
     data: SearchMapResp(),
@@ -385,7 +385,7 @@ export function ApiResponseMemberBirdStatusResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponseobject() {
+export function ApiResponseObject() {
   return {
     code: 200,
     data: '',
@@ -415,7 +415,7 @@ export function ApiResponseQueryLastMessageResp() {
     traceId: '@guid',
   }
 }
-export function ApiResponsestring() {
+export function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',

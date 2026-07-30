@@ -4,7 +4,7 @@ import {
   ApiResponseComPageDesktopComplexResp,
   ApiResponseDesktopAllInfoResp,
   ApiResponseListExtWhiteResp,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   ApiResponseShiftDesktopResp,
   ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo,
   ApiResponseVoid,
@@ -32,7 +32,7 @@ export const desktopEditPost = () => Mock.mock(ApiResponse())
 export const desktopGetDesktopByDesktopIdGet = () => Mock.mock(ApiResponseDesktopAllInfoResp())
 
 /** 获取小金库树_我美丽小金库 */
-export const desktopMyWhiteTreeCountGet = () => Mock.mock(ApiResponseListTreelong())
+export const desktopMyWhiteTreeCountGet = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 小麦甬道[复杂数据] */
 export const desktopPageListGet = () => Mock.mock(ApiResponseComPageDesktopComplexResp())
@@ -53,4 +53,4 @@ export const desktopStopDesktopConfirmPost = () => Mock.mock(ApiResponseVoid())
 export const desktopStopStartDesktopIdGet = () => Mock.mock(ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo())
 
 /** 获取小金库树_全部小金库 */
-export const desktopWhiteTreeCountGet = () => Mock.mock(ApiResponseListTreelong())
+export const desktopWhiteTreeCountGet = () => Mock.mock(ApiResponseListTreeLong())

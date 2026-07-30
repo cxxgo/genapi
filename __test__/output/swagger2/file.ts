@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponsealiyunSTSJianQuanFanHuiZhi,
+  ApiResponseAliyunSTSJianQuanFanHuiZhi,
   ApiResponsePutFileResp,
   ApiResponseQianMingWenJianXiangYing,
   ApiResponseShangChuanALiYunQianMingXiangYing,
@@ -13,7 +13,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 阿里云STS鉴权 */
-export function fileGetAliyunStsSignGet(): Promise<ApiResponsealiyunSTSJianQuanFanHuiZhi> {
+export function fileGetAliyunStsSignGet(): Promise<ApiResponseAliyunSTSJianQuanFanHuiZhi> {
   return request.get('/api/file/getAliyunStsSign')
 }
 

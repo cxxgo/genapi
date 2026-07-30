@@ -1,10 +1,10 @@
 const request: any = () => {}
 import type {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseKeyBorardRespDuiXiang,
   ApiResponseListGratefulInfoRespLvKeXinXi,
-  ApiResponselong,
+  ApiResponseLong,
   ApiResponseQueryLastMessageResp,
   KeyBorardCancelReq,
   SheZhiMoRenZhiXieChang,
@@ -36,17 +36,17 @@ export function keyBorardGetCancelSmsCodeGet(data: {
 }
 
 /** 获取imkeyBorardid */
-export function keyBorardGetImKeyBorardIdGet(): Promise<ApiResponselong> {
+export function keyBorardGetImKeyBorardIdGet(): Promise<ApiResponseLong> {
   return request.get('/api/keyBorard/getImKeyBorardId')
 }
 
 /** 获取是否接收通知属性 */
-export function keyBorardGetIsNoticedGet(): Promise<ApiResponseboolean> {
+export function keyBorardGetIsNoticedGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/keyBorard/getIsNoticed')
 }
 
 /** 当前channel下是否已经选择旅客 */
-export function keyBorardHasSelectGratefulGet(): Promise<ApiResponseboolean> {
+export function keyBorardHasSelectGratefulGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/keyBorard/hasSelectGrateful')
 }
 
@@ -56,12 +56,12 @@ export function keyBorardListGratefulInfoGet(): Promise<ApiResponseListGratefulI
 }
 
 /** 修改铜钱草头像 */
-export function keyBorardModifyAvatarPost(data: XiuGaiTongQianCaoTouXiang): Promise<ApiResponseboolean> {
+export function keyBorardModifyAvatarPost(data: XiuGaiTongQianCaoTouXiang): Promise<ApiResponseBoolean> {
   return request.post('/api/keyBorard/modifyAvatar', data)
 }
 
 /** 修改铜钱草邮箱 */
-export function keyBorardModifyEmailPost(data: XiuGaiTongQianCaoTouXiang): Promise<ApiResponseboolean> {
+export function keyBorardModifyEmailPost(data: XiuGaiTongQianCaoTouXiang): Promise<ApiResponseBoolean> {
   return request.post('/api/keyBorard/modifyEmail', data)
 }
 

@@ -18,7 +18,7 @@ function ApiResponseListJobCategoryConfigResp() {
     traceId: '@guid',
   }
 }
-function ApiResponseListListlong() {
+function ApiResponseListListLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -28,7 +28,7 @@ function ApiResponseListListlong() {
     traceId: '@guid',
   }
 }
-function ApiResponseListTreelong() {
+function ApiResponseListTreeLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -38,7 +38,7 @@ function ApiResponseListTreelong() {
     traceId: '@guid',
   }
 }
-function ApiResponseobject() {
+function ApiResponseObject() {
   return {
     code: 200,
     data: '',
@@ -348,9 +348,9 @@ function XiLanHuaLieBiao() {
 module.exports = {
   ApiResponseComPageXiLanHuaLieBiao,
   ApiResponseListJobCategoryConfigResp,
-  ApiResponseListListlong,
-  ApiResponseListTreelong,
-  ApiResponseobject,
+  ApiResponseListListLong,
+  ApiResponseListTreeLong,
+  ApiResponseObject,
   ApiResponseResumeInfoMobileResp,
   ApiResponseVoid,
   ApiResponseWhiteDetailResp,

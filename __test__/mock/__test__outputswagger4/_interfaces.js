@@ -15,7 +15,7 @@ export function ApiResponse() {
     traceId: '@guid',
   }
 }
-export function ApiResponseappChaXianBanShuiGuoDaoFanHui() {
+export function ApiResponseAppChaXianBanShuiGuoDaoFanHui() {
   return {
     code: 200,
     data: appChaXianBanShuiGuoDaoFanHui(),
@@ -25,7 +25,7 @@ export function ApiResponseappChaXianBanShuiGuoDaoFanHui() {
     traceId: '@guid',
   }
 }
-export function ApiResponseboolean() {
+export function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -235,10 +235,10 @@ export function ApiResponseComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXian
     traceId: '@guid',
   }
 }
-export function ApiResponseComPagestring() {
+export function ApiResponseComPageString() {
   return {
     code: 200,
-    data: ComPagestring(),
+    data: ComPageString(),
     msg: '@string(5,50)',
     success: '@boolean',
     timestamp: '@datetime',
@@ -575,7 +575,7 @@ export function ApiResponseListMap() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListobject() {
+export function ApiResponseListObject() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -585,7 +585,7 @@ export function ApiResponseListobject() {
     traceId: '@guid',
   }
 }
-export function ApiResponseListstring() {
+export function ApiResponseListString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -645,7 +645,7 @@ export function ApiResponseMap() {
     traceId: '@guid',
   }
 }
-export function ApiResponseMapstringobject() {
+export function ApiResponseMapStringobject() {
   return {
     code: 200,
     data: '',
@@ -655,7 +655,7 @@ export function ApiResponseMapstringobject() {
     traceId: '@guid',
   }
 }
-export function ApiResponseMapstringstring() {
+export function ApiResponseMapStringstring() {
   return {
     code: 200,
     data: '',
@@ -695,7 +695,7 @@ export function ApiResponseQingMingCaoZhiXiaoChouYu() {
     traceId: '@guid',
   }
 }
-export function ApiResponseSetstring() {
+export function ApiResponseSetString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -725,7 +725,7 @@ export function ApiResponseShengJiTiaoJianJuanXinCaiXiangQing() {
     traceId: '@guid',
   }
 }
-export function ApiResponsestring() {
+export function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -1259,7 +1259,7 @@ export function ComPageShuiLiuKanBanChaXianBanQingMingCaoZhiFenYeXiangYing() {
     },
   }
 }
-export function ComPagestring() {
+export function ComPageString() {
   return {
     current: '@integer(3,1000)',
     'records|1-20': ['@string(5,50)'],

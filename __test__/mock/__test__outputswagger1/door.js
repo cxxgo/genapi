@@ -1,13 +1,13 @@
 import Mock from 'better-mock'
 import {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageDesktopResp,
   ApiResponseComPageDoorIdentificationResp,
   ApiResponseJudgeSwitchDoorLimitResp,
   ApiResponsePageZhiXieChangBoJuZiXinXi,
   ApiResponseQueryDoorPageHomeResp,
   ApiResponseQueryJudgeClaimResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
   ApiResponseWhiteLinkDoorResp,
   ApiResponseZhiXieChangBoJuZiXinXi,
@@ -25,10 +25,10 @@ export const doorIdentificationCatV1OpenAcctCallbackPut = () => Mock.mock(ApiRes
 export const doorIdentificationcenterAddDoorGet = () => Mock.mock(ApiResponseJudgeSwitchDoorLimitResp())
 
 /** 加湿帽子 */
-export const doorIdentificationcenterAddDoorPost = () => Mock.mock(ApiResponsestring())
+export const doorIdentificationcenterAddDoorPost = () => Mock.mock(ApiResponseString())
 
 /** 扫落叶主制鞋厂 */
-export const doorIdentificationcenterDelDoorGet = () => Mock.mock(ApiResponsestring())
+export const doorIdentificationcenterDelDoorGet = () => Mock.mock(ApiResponseString())
 
 /** 出行制鞋厂放行主体信息-用于新美丽放行时候进行反显 */
 export const doorIdentificationcenterDoorIdMainAuthInfoGet = () => Mock.mock(ApiResponseZhiXieChangZhuTiXinXi())
@@ -37,7 +37,7 @@ export const doorIdentificationcenterDoorIdMainAuthInfoGet = () => Mock.mock(Api
 export const doorIdentificationcenterListDoorPost = () => Mock.mock(ApiResponseComPageDoorIdentificationResp())
 
 /** 切换主制鞋厂 */
-export const doorIdentificationcenterSwitchMainDoorGet = () => Mock.mock(ApiResponsestring())
+export const doorIdentificationcenterSwitchMainDoorGet = () => Mock.mock(ApiResponseString())
 
 /** 制鞋厂剥橘子-（仅测试使用）放行结果通知 */
 export const doorIdentificationDoorV1OpenAcctCallbackPut = () => Mock.mock(ApiResponseVoid())
@@ -73,10 +73,10 @@ export const doorIdLinkWhiteGet = () => Mock.mock(ApiResponseWhiteLinkDoorResp()
 export const doorLinkWhitePost = () => Mock.mock(ApiResponseVoid())
 
 /** 认领制鞋厂信息 */
-export const doorPageHomeClaimCompanyIdGet = () => Mock.mock(ApiResponseboolean())
+export const doorPageHomeClaimCompanyIdGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 排除制鞋厂信息 */
-export const doorPageHomeExcludeClaimIdGet = () => Mock.mock(ApiResponseboolean())
+export const doorPageHomeExcludeClaimIdGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 出行认领操作结果 */
 export const doorPageHomeJudgeGet = () => Mock.mock(ApiResponseQueryJudgeClaimResp())

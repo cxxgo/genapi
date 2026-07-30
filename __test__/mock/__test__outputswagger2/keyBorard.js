@@ -1,10 +1,10 @@
 import Mock from 'better-mock'
 import {
   ApiResponse,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseKeyBorardRespDuiXiang,
   ApiResponseListGratefulInfoRespLvKeXinXi,
-  ApiResponselong,
+  ApiResponseLong,
   ApiResponseQueryLastMessageResp,
 } from './_interfaces'
 
@@ -18,22 +18,22 @@ export const keyBorardCatInfoGet = () => Mock.mock(ApiResponseKeyBorardRespDuiXi
 export const keyBorardGetCancelSmsCodeGet = () => Mock.mock(ApiResponse())
 
 /** 获取imkeyBorardid */
-export const keyBorardGetImKeyBorardIdGet = () => Mock.mock(ApiResponselong())
+export const keyBorardGetImKeyBorardIdGet = () => Mock.mock(ApiResponseLong())
 
 /** 获取是否接收通知属性 */
-export const keyBorardGetIsNoticedGet = () => Mock.mock(ApiResponseboolean())
+export const keyBorardGetIsNoticedGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 当前channel下是否已经选择旅客 */
-export const keyBorardHasSelectGratefulGet = () => Mock.mock(ApiResponseboolean())
+export const keyBorardHasSelectGratefulGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 获取铜钱草(正常状态)旅客信息甬道 */
 export const keyBorardListGratefulInfoGet = () => Mock.mock(ApiResponseListGratefulInfoRespLvKeXinXi())
 
 /** 修改铜钱草头像 */
-export const keyBorardModifyAvatarPost = () => Mock.mock(ApiResponseboolean())
+export const keyBorardModifyAvatarPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 修改铜钱草邮箱 */
-export const keyBorardModifyEmailPost = () => Mock.mock(ApiResponseboolean())
+export const keyBorardModifyEmailPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 出行版本类型 */
 export const keyBorardQueryAppVersionGet = () => Mock.mock(ApiResponseQueryLastMessageResp())

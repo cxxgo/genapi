@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseZhiXieChangFangDongXinXiXiangQing,
   ZhiXieChangFangDongXinXiXiangQing,
 } from './_interfaces.ts'
@@ -11,6 +11,6 @@ export function gratefulDoorAcquireInfoGet(): Promise<ApiResponseZhiXieChangFang
 }
 
 /** 修改制鞋厂房东信息 */
-export function gratefulDoorUpdateInfoPost(data: ZhiXieChangFangDongXinXiXiangQing): Promise<ApiResponseboolean> {
+export function gratefulDoorUpdateInfoPost(data: ZhiXieChangFangDongXinXiXiangQing): Promise<ApiResponseBoolean> {
   return request.post('/api/gratefulDoor/updateInfo', data)
 }

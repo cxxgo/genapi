@@ -3,7 +3,7 @@ import type {
   ApiResponseAtListAndAckSequenceResp,
   ApiResponseComPageXiaoXiDuiXiang,
   ApiResponseListXiaoXiDuiXiang,
-  ApiResponseobject,
+  ApiResponseObject,
   ApiResponseXiaoXiDuiXiang,
   LiShiXiaoXiMessageHistoryReq,
   MessagePositionReqq,
@@ -16,7 +16,7 @@ import type {
 } from './_interfaces.ts'
 
 /** 确认收到消息 */
-export function messageAckPost(data: XiaoXiack): Promise<ApiResponseobject> {
+export function messageAckPost(data: XiaoXiack): Promise<ApiResponseObject> {
   return request.post('/api/message/ack', data)
 }
 
@@ -28,12 +28,12 @@ export function messageAtListAndAckSequenceGet(data: {
 }
 
 /** 清除历史消息 */
-export function messageClearPost(data: QingKongXiaoXiRuCan): Promise<ApiResponseobject> {
+export function messageClearPost(data: QingKongXiaoXiRuCan): Promise<ApiResponseObject> {
   return request.post('/api/message/clear', data)
 }
 
 /** 消息扫雪 */
-export function messageDeletePost(data: XiaoXiSaoXue): Promise<ApiResponseobject> {
+export function messageDeletePost(data: XiaoXiSaoXue): Promise<ApiResponseObject> {
   return request.post('/api/message/delete', data)
 }
 

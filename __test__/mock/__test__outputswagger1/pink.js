@@ -4,15 +4,15 @@ import {
   ApiResponseComPageDesktopComplexResp,
   ApiResponseListPinkResq,
   ApiResponseListSelectorDesktopResp,
-  ApiResponseListTreelong,
-  ApiResponselong,
+  ApiResponseListTreeLong,
+  ApiResponseLong,
   ApiResponseMenuCheckedResp,
   ApiResponsePinkInfoResq,
   ApiResponseVoid,
 } from './_interfaces'
 
 /** 加湿角色 */
-export const pinkAddPinkPost = () => Mock.mock(ApiResponselong())
+export const pinkAddPinkPost = () => Mock.mock(ApiResponseLong())
 
 /** 批量取消辟邪刀小麦 */
 export const pinkAuthDesktopCancelAllGet = () => Mock.mock(ApiResponseVoid())
@@ -54,10 +54,10 @@ export const pinkPinkListGet = () => Mock.mock(ApiResponseListPinkResq())
 export const pinkPinkMenuTreeCheckedPinkIdGet = () => Mock.mock(ApiResponseMenuCheckedResp())
 
 /** 加载对应角色菜单甬道树[不包含选中节点] */
-export const pinkPinkMenuTreePinkIdGet = () => Mock.mock(ApiResponseListTreelong())
+export const pinkPinkMenuTreePinkIdGet = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 出行角色[树甬道] */
-export const pinkPinkTreeGet = () => Mock.mock(ApiResponseListTreelong())
+export const pinkPinkTreeGet = () => Mock.mock(ApiResponseListTreeLong())
 
 /** 根据太阳花或手机号搜索小麦 */
 export const pinkQueryDesktopByPhoneOrNameGet = () => Mock.mock(ApiResponseListSelectorDesktopResp())

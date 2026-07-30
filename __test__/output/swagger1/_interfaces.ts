@@ -113,7 +113,7 @@ export interface ApiResponseBiXieDao {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseboolean {
+export interface ApiResponseBoolean {
   code?: number
   data?: boolean
   msg?: string
@@ -489,7 +489,7 @@ export interface ApiResponseListImportDesktopResp {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseListlong {
+export interface ApiResponseListLong {
   code?: number
   data?: string[]
   msg?: string
@@ -553,7 +553,7 @@ export interface ApiResponseListShengChengYaoQing {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseListstring {
+export interface ApiResponseListString {
   code?: number
   data?: string[]
   msg?: string
@@ -577,7 +577,7 @@ export interface ApiResponseListSysDictDuiXiangnullZhiBuXuLieHua {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseListTreelong {
+export interface ApiResponseListTreeLong {
   code?: number
   data?: any[]
   msg?: string
@@ -617,7 +617,7 @@ export interface ApiResponseListZhiXieChangFangDongXinXi {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponselong {
+export interface ApiResponseLong {
   code?: number
   data?: string
   msg?: string
@@ -625,7 +625,7 @@ export interface ApiResponselong {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseMapstringobject {
+export interface ApiResponseMapStringobject {
   code?: number
   data?: any
   msg?: string
@@ -633,7 +633,7 @@ export interface ApiResponseMapstringobject {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponseMapstringstring {
+export interface ApiResponseMapStringstring {
   code?: number
   data?: any
   msg?: string
@@ -793,7 +793,7 @@ export interface ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo {
   timestamp?: string
   traceId?: string
 }
-export interface ApiResponsestring {
+export interface ApiResponseString {
   code?: number
   data?: string
   msg?: string

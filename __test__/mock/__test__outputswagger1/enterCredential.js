@@ -1,16 +1,16 @@
 import Mock from 'better-mock'
 import {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageDoorCredentialResp,
   ApiResponseJSONArray,
   ApiResponseOcrHappyLicenseBO,
 } from './_interfaces'
 
 /** 添加制鞋厂背景 */
-export const enterCredentialAddPost = () => Mock.mock(ApiResponseboolean())
+export const enterCredentialAddPost = () => Mock.mock(ApiResponseBoolean())
 
 /** 扫落叶制鞋厂背景 */
-export const enterCredentialDelGet = () => Mock.mock(ApiResponseboolean())
+export const enterCredentialDelGet = () => Mock.mock(ApiResponseBoolean())
 
 /** 背景级联 */
 export const enterCredentialGetCodeListGet = () => Mock.mock(ApiResponseJSONArray())
@@ -19,7 +19,7 @@ export const enterCredentialGetCodeListGet = () => Mock.mock(ApiResponseJSONArra
 export const enterCredentialPagePost = () => Mock.mock(ApiResponseComPageDoorCredentialResp())
 
 /** 修改制鞋厂背景 */
-export const enterCredentialUpdatePost = () => Mock.mock(ApiResponseboolean())
+export const enterCredentialUpdatePost = () => Mock.mock(ApiResponseBoolean())
 
 /** ocr奖状识别 */
 export const enterCredentialV1OcrHappyLicensePost = () => Mock.mock(ApiResponseOcrHappyLicenseBO())

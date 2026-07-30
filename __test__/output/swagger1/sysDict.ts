@@ -2,7 +2,7 @@ const request: any = () => {}
 import type {
   ApiResponseJSONArray,
   ApiResponseListSysDictDuiXiangnullZhiBuXuLieHua,
-  ApiResponseMapstringobject,
+  ApiResponseMapStringobject,
   ApiResponsePageSysDictDuiXiangnullZhiBuXuLieHua,
   BasePageReq,
 } from './_interfaces.ts'
@@ -47,6 +47,6 @@ export function sysDictV1TypeListTreeGet(data: {
 }
 
 /** 出行菜谱甬道-出行当前数据类型甬道 */
-export function sysDictV1TypesGet(): Promise<ApiResponseMapstringobject> {
+export function sysDictV1TypesGet(): Promise<ApiResponseMapStringobject> {
   return request.get('/api/sys-dict/v1/types')
 }

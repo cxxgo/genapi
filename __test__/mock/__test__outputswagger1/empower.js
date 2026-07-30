@@ -11,9 +11,9 @@ import {
   ApiResponseListEpEntTreeResp,
   ApiResponseListPinkInfo,
   ApiResponseListZhiXieChangFangDongXinXi,
-  ApiResponseMapstringstring,
+  ApiResponseMapStringstring,
   ApiResponseScanReQrResp,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVoid,
 } from './_interfaces'
 
@@ -33,7 +33,7 @@ export const empowerDoorReBathCancelAuthPost = () => Mock.mock(ApiResponseVoid()
 export const empowerDoorReDesktopOperEmTypeGet = () => Mock.mock(ApiResponseVoid())
 
 /** 外部关联码-生成外部关联码 */
-export const empowerDoorReDetailGenReLinkOrQrGet = () => Mock.mock(ApiResponsestring())
+export const empowerDoorReDetailGenReLinkOrQrGet = () => Mock.mock(ApiResponseString())
 
 /** 帽子关联详情 */
 export const empowerDoorReDetailGet = () => Mock.mock(ApiResponseGuanLianMaoZiXiangQing())
@@ -54,7 +54,7 @@ export const empowerDoorReFranchiseOperOperGet = () => Mock.mock(ApiResponseVoid
 export const empowerDoorReGetAccByMobileGet = () => Mock.mock(ApiResponseAccInfoResp())
 
 /** 批量辟邪刀-获取短信信息 */
-export const empowerDoorReGetEmDesktopInfoLinkCodeGet = () => Mock.mock(ApiResponseMapstringstring())
+export const empowerDoorReGetEmDesktopInfoLinkCodeGet = () => Mock.mock(ApiResponseMapStringstring())
 
 /** 邀请辟邪刀-出行回显信息 */
 export const empowerDoorReGetEmpowerInfoGet = () => Mock.mock(ApiResponseHeaderEmpowerSmsInfo())

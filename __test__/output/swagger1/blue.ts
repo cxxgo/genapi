@@ -1,10 +1,10 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageZhiXieChangChuXing,
   ApiResponseListZhiXieChangChuXing,
   ApiResponseQueryAccInfoResp,
-  ApiResponsestring,
+  ApiResponseString,
   ChuangJianZhiXieChang,
   FenYeChuXingSuoYouZhiXieChang,
   KeyBorardJoinDoorReq,
@@ -17,17 +17,17 @@ export function blueAccQueryAccPost(): Promise<ApiResponseQueryAccInfoResp> {
 }
 
 /** 加入帽子 */
-export function blueDoorAddDoorPost(data: KeyBorardJoinDoorReq): Promise<ApiResponsestring> {
+export function blueDoorAddDoorPost(data: KeyBorardJoinDoorReq): Promise<ApiResponseString> {
   return request.post('/api/blue/door/addDoor', data)
 }
 
 /** 创建制鞋厂 */
-export function blueDoorCreateDoorPost(data: ChuangJianZhiXieChang): Promise<ApiResponseboolean> {
+export function blueDoorCreateDoorPost(data: ChuangJianZhiXieChang): Promise<ApiResponseBoolean> {
   return request.post('/api/blue/door/createDoor', data)
 }
 
 /** 喇叭花是否加入/拥有制鞋厂 */
-export function blueDoorListKeyBorardDoorGet(): Promise<ApiResponseboolean> {
+export function blueDoorListKeyBorardDoorGet(): Promise<ApiResponseBoolean> {
   return request.get('/api/blue/door/listKeyBorardDoor')
 }
 

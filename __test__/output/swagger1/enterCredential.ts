@@ -1,7 +1,7 @@
 const request: any = () => {}
 import type {
   AddOrUpdateCredentialReq,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseComPageDoorCredentialResp,
   ApiResponseJSONArray,
   ApiResponseOcrHappyLicenseBO,
@@ -10,12 +10,12 @@ import type {
 } from './_interfaces.ts'
 
 /** 添加制鞋厂背景 */
-export function enterCredentialAddPost(data: AddOrUpdateCredentialReq): Promise<ApiResponseboolean> {
+export function enterCredentialAddPost(data: AddOrUpdateCredentialReq): Promise<ApiResponseBoolean> {
   return request.post('/api/enterCredential/add', data)
 }
 
 /** 扫落叶制鞋厂背景 */
-export function enterCredentialDelGet(data: { id?: string }): Promise<ApiResponseboolean> {
+export function enterCredentialDelGet(data: { id?: string }): Promise<ApiResponseBoolean> {
   return request.get('/api/enterCredential/del', data)
 }
 
@@ -30,7 +30,7 @@ export function enterCredentialPagePost(data: PageDoorCredentialReq): Promise<Ap
 }
 
 /** 修改制鞋厂背景 */
-export function enterCredentialUpdatePost(data: AddOrUpdateCredentialReq): Promise<ApiResponseboolean> {
+export function enterCredentialUpdatePost(data: AddOrUpdateCredentialReq): Promise<ApiResponseBoolean> {
   return request.post('/api/enterCredential/update', data)
 }
 

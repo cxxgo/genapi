@@ -104,7 +104,7 @@ function ApiResponseBiXieDao() {
     traceId: '@guid',
   }
 }
-function ApiResponseboolean() {
+function ApiResponseBoolean() {
   return {
     code: 200,
     data: '@boolean',
@@ -574,7 +574,7 @@ function ApiResponseListImportDesktopResp() {
     traceId: '@guid',
   }
 }
-function ApiResponseListlong() {
+function ApiResponseListLong() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -654,7 +654,7 @@ function ApiResponseListShengChengYaoQing() {
     traceId: '@guid',
   }
 }
-function ApiResponseListstring() {
+function ApiResponseListString() {
   return {
     code: 200,
     'data|1-20': ['@string(5,50)'],
@@ -684,7 +684,7 @@ function ApiResponseListSysDictDuiXiangnullZhiBuXuLieHua() {
     traceId: '@guid',
   }
 }
-function ApiResponseListTreelong() {
+function ApiResponseListTreeLong() {
   return {
     code: 200,
     'data|1-20': [''],
@@ -734,7 +734,7 @@ function ApiResponseListZhiXieChangFangDongXinXi() {
     traceId: '@guid',
   }
 }
-function ApiResponselong() {
+function ApiResponseLong() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -744,7 +744,7 @@ function ApiResponselong() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringobject() {
+function ApiResponseMapStringobject() {
   return {
     code: 200,
     data: '',
@@ -754,7 +754,7 @@ function ApiResponseMapstringobject() {
     traceId: '@guid',
   }
 }
-function ApiResponseMapstringstring() {
+function ApiResponseMapStringstring() {
   return {
     code: 200,
     data: '',
@@ -954,7 +954,7 @@ function ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo() {
     traceId: '@guid',
   }
 }
-function ApiResponsestring() {
+function ApiResponseString() {
   return {
     code: 200,
     data: '@string(5,50)',
@@ -3628,7 +3628,7 @@ module.exports = {
   ApiResponseAccInfoResp,
   ApiResponseAgentConfigResp,
   ApiResponseBiXieDao,
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseChannelAppGratefulConfigResp,
   ApiResponseChannelKeyBorardResp,
   ApiResponseComLoginResp,
@@ -3675,7 +3675,7 @@ module.exports = {
   ApiResponseListFangDongXinXi,
   ApiResponseListFangXingQuDaoZhuangTaiChuXing,
   ApiResponseListImportDesktopResp,
-  ApiResponseListlong,
+  ApiResponseListLong,
   ApiResponseListMenuResp,
   ApiResponseListPinkInfo,
   ApiResponseListPinkResq,
@@ -3683,17 +3683,17 @@ module.exports = {
   ApiResponseListQueryCatPageHomeResp,
   ApiResponseListSelectorDesktopResp,
   ApiResponseListShengChengYaoQing,
-  ApiResponseListstring,
+  ApiResponseListString,
   ApiResponseListSuperManResp,
   ApiResponseListSysDictDuiXiangnullZhiBuXuLieHua,
-  ApiResponseListTreelong,
+  ApiResponseListTreeLong,
   ApiResponseListWenJianShangChuanXiangYing,
   ApiResponseListWhiteResp,
   ApiResponseListZhiXieChangChuXing,
   ApiResponseListZhiXieChangFangDongXinXi,
-  ApiResponselong,
-  ApiResponseMapstringobject,
-  ApiResponseMapstringstring,
+  ApiResponseLong,
+  ApiResponseMapStringobject,
+  ApiResponseMapStringstring,
   ApiResponseMenuCheckedResp,
   ApiResponseMenuResp,
   ApiResponseOcrHappyLicenseBO,
@@ -3713,7 +3713,7 @@ module.exports = {
   ApiResponseShenHeTongJiHuanCunSanShiMiao,
   ApiResponseShiftDesktopResp,
   ApiResponseShuJuYiZhiXingCaoZuoFanHuiJieGuo,
-  ApiResponsestring,
+  ApiResponseString,
   ApiResponseVerificationResp,
   ApiResponseVoid,
   ApiResponseWhiteDetailResp,

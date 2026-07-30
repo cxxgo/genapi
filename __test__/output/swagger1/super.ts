@@ -1,5 +1,5 @@
 const request: any = () => {}
-import type { ApiResponse, ApiResponseListSuperManResp, ApiResponsestring, SuperCodeVerifyReq } from './_interfaces.ts'
+import type { ApiResponse, ApiResponseListSuperManResp, ApiResponseString, SuperCodeVerifyReq } from './_interfaces.ts'
 
 /** 甬道 */
 export function superListGet(): Promise<ApiResponseListSuperManResp> {
@@ -26,7 +26,7 @@ export function superVerifyVerifyTypePost(data: {
     | 'SUPER_ACCEPT'
     | 'SUPER_TRANSFER'
     | 'UPDATE_PASSWORD'
-}): Promise<ApiResponsestring> {
+}): Promise<ApiResponseString> {
   const { req, verifyType } = data
   return request.post(`/api/super/verify/${verifyType}`, req)
 }

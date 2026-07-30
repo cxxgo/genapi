@@ -1,6 +1,6 @@
 const request: any = () => {}
 import type {
-  ApiResponseboolean,
+  ApiResponseBoolean,
   ApiResponseFangDongXinXi,
   ApiResponseListFangDongXinXi,
   QuDaoZhiXieChangJieMengQingQiuRuCan,
@@ -17,12 +17,12 @@ export function gratefulAcquirePresentGratefulInfoGet(): Promise<ApiResponseFang
 }
 
 /** 渠道制鞋厂解绑房东 */
-export function gratefulChannelUnbindPost(data: QuDaoZhiXieChangJieMengQingQiuRuCan): Promise<ApiResponseboolean> {
+export function gratefulChannelUnbindPost(data: QuDaoZhiXieChangJieMengQingQiuRuCan): Promise<ApiResponseBoolean> {
   return request.post('/api/grateful/channel/unbind', data)
 }
 
 /** 切换房东 */
-export function gratefulSwitchGratefulGet(data: { gratefulId?: string }): Promise<ApiResponseboolean> {
+export function gratefulSwitchGratefulGet(data: { gratefulId?: string }): Promise<ApiResponseBoolean> {
   return request.get('/api/grateful/switchGrateful', data)
 }
 

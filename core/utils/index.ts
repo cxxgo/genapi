@@ -40,21 +40,30 @@ export function getUrl(url) {
   return url.replace(/\{/g, '${')
 }
 
+/** 格式化路径 */
+export function normalizeUrl(url: string = '') {
+  return url
+    .replace(/\/+/g, '/') // 多个连续的斜杠转为一个斜杠
+    .replace(/^\//, '') // 去除开头的 /
+    .replace(/\/$/, '') // 去除结尾的 /
+    .replace(/^api\//, '') // 去除开头的 api/
+    .replace(/-([a-z])/g, (matched, letter) => letter.toUpperCase()) // -后字母转大写并移除短杠
+    .replace(/[${}\-.]/g, '') // 去除 $、{、}、-、.
+    .replace(/\/([a-z])/gi, (match, char) => `/${char.toUpperCase()}`) // 斜杠后字母转大写
+    .replace(/^([a-z])/i, (match, char) => char.toLowerCase()) // 首字母小写
+}
+
 /**
  * 获取接口名称, 需要处理一些特殊的路径
- * /api/user/create 处理成 userCreate
+ * /api/user/create-cat 处理成 userCreateCat
  * /api/handleAddress/deleteAddress/{id} 处理成  handleAddressDeleteAddressId
  */
-export function getApiName(url, method) {
-  let url2 = url.replace(/^\/api/, '').replace(/\/$/, '') // 去除开头的 /api 和 结尾的 /
-  url2 = url2.replace(/[${}\-.]/g, '') // 去除可能存在的短杠、左右花括号和$、 点号
-  let name = url2.replace(/\/\w/g, (matched, index) => {
-    const letter = matched.replace('/', '')
-    return index === 0 ? letter : letter.toUpperCase()
-  })
+export function getApiName(url: string, method: string) {
+  let name = normalizeUrl(url).replace(/\//g, '') // 去除所有斜杠
+
   // 路径相同的 api, 在后面拼上请求方法以做区分， 如，有两个接口处理后的接口名称都是 systemUser，则分别处理成： systemUserGet 和  systemUserPost
   if (method) {
-    name += upperCaseFirseLetter(method)
+    name += upperCaseFirstLetter(method)
   }
   // 如果处理后的接口名称正好是 js 关键字，则默认加上Fn, 如，delete 处理成 deleteFn
   name = jsKeyWords.includes(name) ? `${name}Fn` : name
@@ -75,8 +84,8 @@ export function getFileName(data: { url: string, originUrl: string, userFileName
   }
   // 使用默认的 fileName 生成规则, 如 /api/user/create 处理成 user
   else {
-    const arr = originUrl.split('/')
-    theFileName = arr.find(item => item && item !== 'api')
+    const arr = normalizeUrl(originUrl).split('/')
+    theFileName = arr.find(item => item && item !== 'api') || 'index' // 兜底文件名 index
   }
   return theFileName
 }
@@ -116,13 +125,17 @@ export function getMethod(obj) {
 
 /**
  * 处理一些奇奇怪怪的 interface 或 入参 name，去除特殊字符，并将中文转英文
- * 如： ApiResponse«List«我的数据对象GroupResp»»， 将被处理成 ApiResponseWoDeShuJuDuiXiangGroupResp
+ * 如： ApiResponse«List«我的数据对象GroupResp«long»»»， 将被处理成 ApiResponseWoDeShuJuDuiXiangGroupRespLong
  */
 export function handleWeirdName(originKey) {
   if (!originKey || !originKey.trim())
     return ''
-  // 汉字转拼音 历史消息=>LiShiXiaoXi
+
   let str = originKey
+    .replace(/\s/g, '') // 去除所有空格
+    .replace(/«([a-z])/gi, (match, char) => `/${char.toUpperCase()}`) // «后字母转大写
+
+  // 汉字转拼音 历史消息=>LiShiXiaoXi
   if (hasChinese(str)) {
     str = pinyin.getFullChars(str)
   }
@@ -141,7 +154,7 @@ export function handleDescription(desc?: string) {
 }
 
 /** 首字母大写 */
-export function upperCaseFirseLetter(str) {
+export function upperCaseFirstLetter(str) {
   return str.slice(0, 1).toUpperCase() + str.slice(1)
 }
 
@@ -213,7 +226,8 @@ export function groupApiByFileName(apis: IApiModel[]) {
   // 按文件所属文件名称给 api 分组
   ;(apis || []).forEach((item) => {
     const { fileName, fileExt } = item
-    const idx = apiGroup.findIndex(item => item.fileName === fileName)
+    // 文件名大小写不敏感分组，避免 emo-center 与 Emo-center 在大小写不敏感的文件系统（如 macOS APFS）上落到同一文件互相覆盖
+    const idx = apiGroup.findIndex(item => item.fileName.toLowerCase() === fileName.toLowerCase())
     if (idx > -1) {
       apiGroup[idx].apis.push(item)
     }
