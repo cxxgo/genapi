@@ -195,12 +195,11 @@ genapi mock-server
          * 自定义接口所属文件名称
          * @param url 接口路径（pathRewrite 后的路径）
          * @param originUrl 接口原始路径（接口文档上的路径）
+         * @param defaultFileName 内置规则生成的文件名称（如 /api/user-center/create 处理成 userCenter），可在其基础上二次处理
          **/
-        fileName: ({ url, originUrl }) => {
+        fileName: ({ url, originUrl, defaultFileName }) => {
           // 如：
           return 'myApi' // 将所有的接口都放到 myApi.ts 文件里
-          // 再如：
-          // return originUrl.replace(/^\/prefix\/api\//, '').split('/')[0] //  '/prefix/api/dept/list' 放到 dept.ts 里
         },
       },
     ]

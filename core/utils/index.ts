@@ -40,8 +40,11 @@ export function getUrl(url) {
   return url.replace(/\{/g, '${')
 }
 
-/** 格式化路径 */
-export function normalizeUrl(url: string = '') {
+/**
+ * 格式化路径
+ * /api/user/create-cat  =>  user/CreateCat
+ */
+export function formatUrl(url: string = '') {
   return url
     .replace(/\/+/g, '/') // 多个连续的斜杠转为一个斜杠
     .replace(/^\//, '') // 去除开头的 /
@@ -59,7 +62,7 @@ export function normalizeUrl(url: string = '') {
  * /api/handleAddress/deleteAddress/{id} 处理成  handleAddressDeleteAddressId
  */
 export function getApiName(url: string, method: string) {
-  let name = normalizeUrl(url).replace(/\//g, '') // 去除所有斜杠
+  let name = formatUrl(url).replace(/\//g, '') // 去除所有斜杠
 
   // 路径相同的 api, 在后面拼上请求方法以做区分， 如，有两个接口处理后的接口名称都是 systemUser，则分别处理成： systemUserGet 和  systemUserPost
   if (method) {
@@ -73,21 +76,28 @@ export function getApiName(url: string, method: string) {
 /** 获取接口所属文件名称 */
 export function getFileName(data: { url: string, originUrl: string, userFileName: string | Function }) {
   const { url, userFileName, originUrl } = data
+  // 默认的文件名称生成规则, 如 /api/user-center/create 处理成 userCenter
+  const defaultFileName = getDefaultFileName(originUrl)
   let theFileName = ''
   //  用户传入的 fileName 是个方法
   if (userFileName && typeof userFileName === 'function') {
-    theFileName = userFileName({ url, originUrl })
+    theFileName = userFileName({ url, originUrl, defaultFileName })
   }
   //  用户传入的 fileName 是个字符串
   else if (userFileName && typeof userFileName === 'string') {
     theFileName = userFileName
   }
-  // 使用默认的 fileName 生成规则, 如 /api/user/create 处理成 user
+  // 使用默认的 fileName 生成规则
   else {
-    const arr = normalizeUrl(originUrl).split('/')
-    theFileName = arr.find(item => item && item !== 'api') || 'index' // 兜底文件名 index
+    theFileName = defaultFileName
   }
   return theFileName
+}
+
+/** 默认文件名称生成规则, 如 /api/user/create 处理成 user */
+export function getDefaultFileName(originUrl: string) {
+  const arr = formatUrl(originUrl).split('/')
+  return arr.find(item => item && item !== 'api') || 'index' // 兜底文件名 index
 }
 
 /** 获取文件后缀, 默认 ts */

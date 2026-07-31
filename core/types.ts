@@ -180,4 +180,6 @@ export interface FileNameFnParam {
   url: string
   /** 接口原始路径（即重写前路径） */
   originUrl: string
+  /** 文件名称默认值（内置生成规则生成的结果，如 /api/user-center/create 处理成 userCenter） */
+  defaultFileName: string
 }
