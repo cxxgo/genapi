@@ -1,3 +1,9 @@
+## <small>3.0.5 (2026-08-20)</small>
+
+* feat: 处理既有 in path 又有 in formData 情况 ([2e604a9](https://github.com/cxxgo/genApi/commit/2e604a9))
+
+
+
 ## <small>3.0.4 (2026-07-31)</small>
 
 * feat: 如果路径中带短杠，apiName 短杠后面的单词处理为大写；解决输出的文件名的大小写敏感问题 /Emo-center,  将输出到 emoCenter 文件中 ([1fae7f7](https://github.com/cxxgo/genApi/commit/1fae7f7))
