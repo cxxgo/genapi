@@ -113,10 +113,10 @@ function getParamStr(parameters: IParams[]) {
     p2 = 'data'
     p3 = ''
   }
-  // 存在 in path 的参数，且其它都 in query 或 in body
+  // 存在 in path 的参数，且其它都 in query、body 或 formData
   else if (
     avaliableParam.some(p => p.in === 'path')
-    && avaliableParam.filter(p => p.in !== 'path').every(p => p.in === 'query' || p.in === 'body')
+    && avaliableParam.filter(p => p.in !== 'path').every(p => p.in === 'query' || p.in === 'body' || p.in === 'formData')
   ) {
     const notInPathParam = avaliableParam.filter(p => p.in !== 'path')
     const p1Str = getP1Str(avaliableParam)
@@ -130,7 +130,7 @@ function getParamStr(parameters: IParams[]) {
     }
     p3 = `const {${avaliableParam.map(p => p.name).join(',')}} =data`
   }
-  // 其他奇怪的或未知的情况，如 in formData
+  // 其他奇怪的或未知的情况
   else {
     p1 = 'data?:any'
     p2 = 'data'

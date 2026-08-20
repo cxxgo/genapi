@@ -101,7 +101,7 @@ export interface IParams {
   name: string
   /** 参数注释 */
   description?: string // 注释
-  in: 'header' | 'body' | 'query' | 'path' // 可能值： body ,header, query, path...
+  in: 'header' | 'body' | 'query' | 'path' | 'formData' // 可能值： body ,header, query, path, formData...
   /** 是否是数组 */
   isArray: boolean
   /** 入参类型，可能值：string, number, boolean, any, void, File, UserInterface... */

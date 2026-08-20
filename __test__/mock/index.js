@@ -107,6 +107,7 @@ import * as __test__outputmessemoCenter from './__test__outputmess/emoCenter.js'
 import * as __test__outputmesshappyPlan from './__test__outputmess/happyPlan.js'
 import * as __test__outputmessmobile from './__test__outputmess/mobile.js'
 import * as __test__outputmessemo from './__test__outputmess/emo.js'
+import * as __test__outputmessimport from './__test__outputmess/import.js'
 Mock.mock(/\/api\/blue\/acc\/queryAcc/, 'post', __test__outputswagger1blue.blueAccQueryAccPost)
 Mock.mock(/\/api\/blue\/door\/addDoor/, 'post', __test__outputswagger1blue.blueDoorAddDoorPost)
 Mock.mock(/\/api\/blue\/door\/createDoor/, 'post', __test__outputswagger1blue.blueDoorCreateDoorPost)
@@ -2527,3 +2528,5 @@ Mock.mock(/\/api\/emo-center\/white\/get\/.*/, 'get', __test__outputmessemoCente
 Mock.mock(/\/api\/happyPlan\/addCustomer/, 'get', __test__outputmesshappyPlan.happyPlanAddCustomer)
 Mock.mock(/\/api\/mobile\/person\/resume\//, 'get', __test__outputmessmobile.mobilePersonResume)
 Mock.mock(/\/api\/emo\/emo\/employee\/tree/, 'get', __test__outputmessemo.emoEmoEmployeeTree)
+Mock.mock(/\/api\/import\/business-configs\/.*/, 'get', __test__outputmessimport.importBusinessConfigsBusinessKeyGet)
+Mock.mock(/\/api\/import\/business-configs\/.*/, 'put', __test__outputmessimport.importBusinessConfigsBusinessKeyPut)

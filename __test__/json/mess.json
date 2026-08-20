@@ -422,6 +422,73 @@
         },
         "security": [{ "satoken": ["global"] }]
       }
+    },
+    "/api/import/business-configs/{businessKey}": {
+      "get": {
+        "tags": [
+          "烤南瓜-材料清单"
+        ],
+        "summary": "获取材料清单组信息（衣服视图，不含模板生成策略等背板字段）",
+        "operationId": "getConfigGroupUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "businessKey",
+            "in": "path",
+            "description": "业务Key",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "ApiResponse«材料清单组衣服视图»",
+              "$ref": "#/definitions/ApiResponse«材料清单组衣服视图»"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "烤南瓜-材料清单"
+        ],
+        "summary": "上传 JSON 文件保存材料清单",
+        "operationId": "saveBusinessConfigUsingPUT",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "file",
+            "in": "formData",
+            "required": false,
+            "type": "file"
+          },
+          {
+            "name": "businessKey",
+            "in": "path",
+            "description": "业务Key",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "ApiResponse«Void»",
+              "$ref": "#/definitions/ApiResponse«Void»"
+            }
+          }
+        }
+      }
     }
   },
   "securityDefinitions": { "satoken": { "type": "apiKey", "name": "satoken", "in": "header" } },
